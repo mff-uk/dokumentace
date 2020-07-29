@@ -195,192 +195,92 @@
             <h2>Příklady</h2>
 
             <p>
-                V této sekci jsou uvedeny příklady reprezantace pracovních míst v různých úrovních detailu, ve formátu JSON-LD [[!json-ld11]], a tedy i JSON [[!ECMA-404]].
+                V této sekci je uveden příklad reprezantace výběrových řízení MFF UK, ve formátu JSON-LD [[!json-ld11]], a tedy i JSON [[!ECMA-404]].
             </p>
 
-            <section id="příklady-jednoduché-pracovní-místo-ve-vědě-a-výzkumu">
-                <h3>Jednoduché pracovní místo ve vědě a výzkumu</h3>
-
-                <p>
-                    Příklad ukazuje, jak lze prezentovat pracovní místa ve vědě a výzkumu s minimálními položkami k publikaci.
-                </p>
-
-                <p class="warning">
-                    Příklad a schéma jsou stále ve vývoji.
-                 </p>
- 
-                <aside class="example" title="Jednoduché pracovní místo ve vědě a výzkumu v JSON-LD">
-                    <p>
-                        <a href="příklady/1.jsonld">JSON-LD soubor</a>, <a href="schémata/pracovní-místo-ve-vědě-a-výzkumu.json">JSON Schema</a>, <a href="schémata/pracovní-místa-ve-vědě-a-výzkumu.json">JSON Schema pro více témat dizertačních prací</a>, <a href="kontexty/pracovní-místo-ve-vědě-a-výzkumu.jsonld">JSON-LD kontext</a>
-                    </p>
-
-                    <pre class="json">
-{
-    "@context": "https://pod-test.mvcr.gov.cz/otevřené-formální-normy/pracovní-místa-ve-vědě-a-výzkumu/draft/kontexty/pracovní-místo-ve-vědě-a-výzkumu.jsonld",
-    "typ": "Pracovní místo ve vědě a výzkumu",
-    "název": {
-        "cs": "Geofyzika"
-    },
-    "popis": {
-        "cs": "Výzkumný pracovník v oblasti geofyziky na Katedře geofyziky. Kandidát by se měl aktivně zapojit do výzkumu v jedné z následujících oblastí: Dynamika Země a planetárních těles (modelování termálního a deformačního vývoje), seismologie (modelování seismického zdroje a šíření vln) a  částicová geofyzika (geoneutrina a související geofyzikální procesy)."
-    },
-    "pracoviště": {
-        "typ": "Pracoviště",
-        "název": {
-            "cs": "Matematicko-fyzikální fakulta",
-            "en": "Faculty of mathematics and physics"
-        },
-        "orjk": "11320",
-        "provozovatel": {
-            "typ": "Osoba",
-            "název": {
-                "cs": "Univerzita Karlova",
-                "en": "Charles University"
-            },
-            "ičo": "00216208"
-        }
-    },
-    "akademická_pozice": "https://data.mvcr.gov.cz/zdroj/číselníky/akademické-pozice/položky/OA",
-    "relevantní_do": {
-        "typ": "Časový okamžik",
-        "datum": "2020-04-30"
-    },
-    "termín_podání": {
-        "typ": "Časový okamžik",
-        "datum": "2020-04-30"
-    },
-    "kontakt": [{
-        "typ": "Kontakt",
-        "email": "mailto:konkurzy@dekanat.mff.cuni.cz"
-    }]
-}</pre>
-                </aside>
-
-            </section>
-
-            <section id="příklady-komplexní-pracovní-místo-ve-vědě-a-výzkumu">
-                <h3>Komplexní pracovní místo ve vědě a výzkumu</h3>
+            <section id="příklady-výběrové-řízení">
+                <h3>Výběrové řízení</h3>
                 
                 <p>
-                    V komplexním příkladu jsou uvedeny položky, které je vhodné vyplnit, aby měl uživatel k dispozici co nejvíce informací o daném pracovním místu ve vědě a výzkumu.
-                    Další položky lze přidávat dle potřeby. 
+                    V příkladu jsou uvedeny položky, které se v popisu výběrového řízení nachází.
                 </p>
                 
                 <p class="warning">
                    Příklad a schéma jsou stále ve vývoji.
                 </p>
 
-                <aside class="example" title="Komplexní pracovní místo ve vědě a výzkumu v JSON-LD">
+                <aside class="example" title="Výběrové řízení v JSON-LD">
                     <p>
-                        <a href="příklady/2.jsonld">JSON-LD soubor</a>, <a href="schémata/pracovní-místo-ve-vědě-a-výzkumu.json">JSON Schema</a>, <a href="schémata/pracovní-místa-ve-vědě-a-výzkumu.json">JSON Schema pro více témat dizertačních prací</a>, <a href="kontexty/pracovní-místo-ve-vědě-a-výzkumu.jsonld">JSON-LD kontext</a>
+                        <a href="příklady/1.jsonld">JSON-LD soubor</a>, <a href="schémata/výběrové-řízení.json">JSON Schema</a>, <a href="schémata/výběrová-řízení.json">JSON Schema pro více výběrových řízení</a>, <a href="kontexty/výběrová-řízení.jsonld">JSON-LD kontext</a>
                     </p>
 
                     <pre class="json">
-{
+[{
     "@context": "https://pod-test.mvcr.gov.cz/otevřené-formální-normy/pracovní-místa-ve-vědě-a-výzkumu/draft/kontexty/pracovní-místo-ve-vědě-a-výzkumu.jsonld",
     "typ": "Pracovní místo ve vědě a výzkumu",
-    "id": "202004-PD-FS2",
-    "název": {
-        "cs": "Geofyzika"
-    },
-    "popis": {
-        "cs": "Výzkumný pracovník v oblasti geofyziky na Katedře geofyziky. Kandidát by se měl aktivně zapojit do výzkumu v jedné z následujících oblastí: Dynamika Země a planetárních těles (modelování termálního a deformačního vývoje), seismologie (modelování seismického zdroje a šíření vln) a  částicová geofyzika (geoneutrina a související geofyzikální procesy)."
-    },
-    "url": "https://www.mff.cuni.cz/cs/fakulta/pracovni-prilezitosti/vyberova-rizeni/vedecka-mista-typu-postdok-na-fyzikalni-sekci-s-terminem-podani-prihlasek-30-dubna-2020",
+    "iri": "https://data.mff.cuni.cz/zdroj/výběrová-řízení/202008-AP1-KSI",
+    "id": "202008-AP1-KSI",
     "nástup_dle_dohody": true,
-    "nástup_ihned": false,
-    "počet_hodin_týdně": 40,
+    "kontakt": [{
+        "typ": "Kontakt",
+        "název": {
+            "cs": "Oficiální e-mail",
+            "en": "Official e-mail"
+        },
+        "email": "mailto:konkurzy@mff.cuni.cz"
+    }],
+    "sekce": "https://data.mff.cuni.cz/zdroj/číselníky/sekce/položky/informatika",
+    "akademická_pozice": "https://data.mvcr.gov.cz/zdroj/číselníky/akademické-pozice/položky/OA",
+    "mzdová_třída": "https://data.mff.cuni.cz/zdroj/číselník/mzdové-třídy/položky/AP1",
+    "typ_pracovního_vztahu": [
+        "https://data.mvcr.gov.cz/zdroj/číselníky/typy-pracovních-vztahů/položky/zkrácený-úvazek"
+    ],
     "pracoviště": {
         "typ": "Pracoviště",
-        "název": {
-            "cs": "Katedra geofyziky",
-            "en": "Department of geophysics"
-        },
-        "je_součástí": {
-            "typ": "Pracoviště",
-            "název": {
-                "cs": "Fyzikální sekce",
-                "en": "School of Physics"
-            },
-            "je_součástí": {
-                "typ": "Pracoviště",
-                "název": {
-                    "cs": "Matematicko-fyzikální fakulta",
-                    "en": "Faculty of mathematics and physics"
-                },
-                "orjk": "11320",
-                "provozovatel": {
-                    "typ": "Osoba",
-                    "název": {
-                        "cs": "Univerzita Karlova",
-                        "en": "Charles University"
-                    },
-                    "ičo": "00216208"
-                }
-            }
-        }
+        "iri": "https://data.mff.cuni.cz/zdroj/číselník/organizační-struktura/oddělení/204"
     },
-    "akademická_pozice": "https://data.mvcr.gov.cz/zdroj/číselníky/akademické-pozice/položky/VP",
-    "relevantní_do": {
+    "popis": {
+        "cs": "V odůvodněných případech, např. pokud uchazeč dokončí magisterské studium v době mezi termínem podání přihlášky do výběrového řízení a termínem nástupu do pracovního poměru, dodá uchazeč doklad o ukončeném magisterském vysokoškolském vzdělání před uzavřením pracovní smlouvy. Předložení dokladu o ukončeném magisterském vysokoškolském vzdělání je podmínkou uzavření pracovní smlouvy."
+    },
+    "obor_isvav": [
+        "https://data.mvcr.gov.cz/zdroj/číselníky/klasifikace-výzkumných-oborů/položky/I"
+    ],
+    "obor_frascati": [
+        "https://data.mvcr.gov.cz/zdroj/číselníky/ford/položky/10200"
+    ],
+    "nástup": {
         "typ": "Časový okamžik",
-        "datum": "2020-04-30"
+        "datum": "2020-10-01"
     },
     "termín_podání": {
         "typ": "Časový okamžik",
-        "datum": "2020-04-30"
+        "datum": "2020-08-14"
     },
+    "expertíza": [],
     "kvalifikace": [{
-            "typ": "Kvalifikace",
-            "popis": {
-                "cs": "výzkumný pracovník s titulem Ph.D. ve fyzice nebo příbuzných oblastech uděleným ne dříve než 7 let před termínem nástupu (může se prodloužit o dobu mateřské a  rodičovské dovolené, dlouhodobé nemoci, ošetřování člena rodiny po více než 90 dní a vojenské služby), který v průběhu posledních 3 let minimálně 2 roky působil mimo území ČR v oblasti výzkumu na pracovní úvazek minimálně 0,5 nebo byl po tuto dobu studentem Ph.D. (či obdobné formy) v zahraničí."
-            }
-        },
-        {
-            "typ": "Kvalifikace",
-            "název": {
-                "cs": "Prokázaná publikační činnost"
-            },
-            "popis": {
-                "cs": "V posledních 3  letech minimálně 2 publikační výstupy evidované v databázích Thomson Reuters Web of Science nebo Scopus."
-            }
-        }
-    ],
-    "obor_isvav": ["https://data.mvcr.gov.cz/zdroj/číselníky/klasifikace-výzkumných-oborů/položky/B"],
-    "příloha": [{
-        "typ": "Digitální objekt",
+        "typ": "Kvalifikace",
         "název": {
-            "cs": "Řád výběrového řízení UK"
-        },
-        "url": "https://cuni.cz/UK-8898.html"
-    }],
-    "kontakt": [{
-        "typ": "Kontakt",
-        "email": "mailto:konkurzy@dekanat.mff.cuni.cz"
+            "cs": "Dokončené magisterské vysokoškolské vzdělání v oboru informatika nebo příbuzném oboru nejpozději ke dni nástupu do pracovního poměru."
+        }
     }],
     "požadované_dokumenty": [{
             "název": {
-                "cs": "strukturovaný životopis"
-            }
-        }, {
-            "název": {
-                "cs": "seznam publikační aktivity"
+                "cs": "strukturovaný životopis",
+                "en": "a curriculum vitae"
             }
         },
         {
             "název": {
-                "cs": "popis vědeckých plánů"
+                "cs": "doklad o ukončeném magisterském vysokoškolském vzdělání"
             }
-        }, {
+        },
+        {
             "název": {
-                "cs": "doklad o udělení titulu Ph.D."
-            }
-        }, {
-            "název": {
-                "cs": "dva doporučující dopisy"
+                "cs": "uchazeč zajistí, aby na e-mail konkurzy@mff.cuni.cz byl zaslán jeden doporučující dopis, také identifikovaný příslušným kódem pracovního místa v předmětu zprávy"
             }
         }
     ]
-}</pre>
+}]</pre>
                 </aside>
 
             </section>

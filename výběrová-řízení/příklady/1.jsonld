@@ -1,39 +1,66 @@
-{
-	"@context": "https://data.mff.cuni.cz/dokumentace/výběrová-řízení/kontexty/výběrová-řízení.jsonld",
+[{
+	"@context": "https://pod-test.mvcr.gov.cz/otevřené-formální-normy/pracovní-místa-ve-vědě-a-výzkumu/draft/kontexty/pracovní-místo-ve-vědě-a-výzkumu.jsonld",
 	"typ": "Pracovní místo ve vědě a výzkumu",
-	"název": {
-		"cs": "Geofyzika"
-	},
-	"popis": {
-		"cs": "Výzkumný pracovník v oblasti geofyziky na Katedře geofyziky. Kandidát by se měl aktivně zapojit do výzkumu v jedné z následujících oblastí: Dynamika Země a planetárních těles (modelování termálního a deformačního vývoje), seismologie (modelování seismického zdroje a šíření vln) a  částicová geofyzika (geoneutrina a související geofyzikální procesy)."
-	},
+	"iri": "https://data.mff.cuni.cz/zdroj/výběrová-řízení/202008-AP1-KSI",
+	"id": "202008-AP1-KSI",
+	"nástup_dle_dohody": true,
+	"kontakt": [{
+		"typ": "Kontakt",
+		"název": {
+			"cs": "Oficiální e-mail",
+			"en": "Official e-mail"
+		},
+		"email": "mailto:konkurzy@mff.cuni.cz"
+	}],
+	"sekce": "https://data.mff.cuni.cz/zdroj/číselníky/sekce/položky/informatika",
+	"akademická_pozice": "https://data.mvcr.gov.cz/zdroj/číselníky/akademické-pozice/položky/OA",
+	"mzdová_třída": "https://data.mff.cuni.cz/zdroj/číselník/mzdové-třídy/položky/AP1",
+	"typ_pracovního_vztahu": [
+		"https://data.mvcr.gov.cz/zdroj/číselníky/typy-pracovních-vztahů/položky/zkrácený-úvazek"
+	],
 	"pracoviště": {
 		"typ": "Pracoviště",
-		"název": {
-			"cs": "Matematicko-fyzikální fakulta",
-			"en": "Faculty of mathematics and physics"
-		},
-		"orjk": "11320",
-		"provozovatel": {
-			"typ": "Osoba",
-			"název": {
-				"cs": "Univerzita Karlova",
-				"en": "Charles University"
-			},
-			"ičo": "00216208"
-		}
+		"iri": "https://data.mff.cuni.cz/zdroj/číselník/organizační-struktura/oddělení/204"
 	},
-	"akademická_pozice": "https://data.mvcr.gov.cz/zdroj/číselníky/akademické-pozice/položky/OA",
-	"relevantní_do": {
+	"popis": {
+		"cs": "V odůvodněných případech, např. pokud uchazeč dokončí magisterské studium v době mezi termínem podání přihlášky do výběrového řízení a termínem nástupu do pracovního poměru, dodá uchazeč doklad o ukončeném magisterském vysokoškolském vzdělání před uzavřením pracovní smlouvy. Předložení dokladu o ukončeném magisterském vysokoškolském vzdělání je podmínkou uzavření pracovní smlouvy."
+	},
+	"obor_isvav": [
+		"https://data.mvcr.gov.cz/zdroj/číselníky/klasifikace-výzkumných-oborů/položky/I"
+	],
+	"obor_frascati": [
+		"https://data.mvcr.gov.cz/zdroj/číselníky/ford/položky/10200"
+	],
+	"nástup": {
 		"typ": "Časový okamžik",
-		"datum": "2020-04-30"
+		"datum": "2020-10-01"
 	},
 	"termín_podání": {
 		"typ": "Časový okamžik",
-		"datum": "2020-04-30"
+		"datum": "2020-08-14"
 	},
-	"kontakt": [{
-		"typ": "Kontakt",
-		"email": "mailto:konkurzy@dekanat.mff.cuni.cz"
-	}]
-}
+	"expertíza": [],
+	"kvalifikace": [{
+		"typ": "Kvalifikace",
+		"název": {
+			"cs": "Dokončené magisterské vysokoškolské vzdělání v oboru informatika nebo příbuzném oboru nejpozději ke dni nástupu do pracovního poměru."
+		}
+	}],
+	"požadované_dokumenty": [{
+			"název": {
+				"cs": "strukturovaný životopis",
+				"en": "a curriculum vitae"
+			}
+		},
+		{
+			"název": {
+				"cs": "doklad o ukončeném magisterském vysokoškolském vzdělání"
+			}
+		},
+		{
+			"název": {
+				"cs": "uchazeč zajistí, aby na e-mail konkurzy@mff.cuni.cz byl zaslán jeden doporučující dopis, také identifikovaný příslušným kódem pracovního místa v předmětu zprávy"
+			}
+		}
+	]
+}]
