@@ -1,7 +1,7 @@
 [{
-	"@context": "https://pod-test.mvcr.gov.cz/otevřené-formální-normy/pracovní-místa-ve-vědě-a-výzkumu/draft/kontexty/pracovní-místo-ve-vědě-a-výzkumu.jsonld",
-	"typ": "Pracovní místo ve vědě a výzkumu",
-	"iri": "https://data.mff.cuni.cz/zdroj/výběrová-řízení/202008-AP1-KSI",
+	"@context": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/draft/kontexty/pracovní-místa-mff-uk.jsonld",
+	"typ": "Pracovní místo na MFF UK",
+	"iri": "https://data.mff.cuni.cz/zdroj/pracovní-místa-mff-uk/202008-AP1-KSI",
 	"id": "202008-AP1-KSI",
 	"nástup_dle_dohody": true,
 	"kontakt": [{
@@ -13,7 +13,7 @@
 		"email": "mailto:konkurzy@mff.cuni.cz"
 	}],
 	"sekce": "https://data.mff.cuni.cz/zdroj/číselníky/sekce/položky/informatika",
-	"akademická_pozice": "https://data.mvcr.gov.cz/zdroj/číselníky/akademické-pozice/položky/OA",
+	"akademická_pozice_na_vysoké_škole": "https://data.mvcr.gov.cz/zdroj/číselníky/akademické-pozice-na-vysokých-školách/položky/OA",
 	"mzdová_třída": "https://data.mff.cuni.cz/zdroj/číselník/mzdové-třídy/položky/AP1",
 	"typ_pracovního_vztahu": [
 		"https://data.mvcr.gov.cz/zdroj/číselníky/typy-pracovních-vztahů/položky/zkrácený-úvazek"

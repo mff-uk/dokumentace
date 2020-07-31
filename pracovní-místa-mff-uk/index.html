@@ -8,10 +8,10 @@
         <script class="remove">
             var respecConfig = {
                 specStatus: "ED",
-                shortName: "výběrová-řízení",
+                shortName: "pracovní-místa-mff-uk",
                 showPreviousVersion: false,
-                thisVersion: "https://data.mff.cuni.cz/dokumentace/výběrová-řízení/",
-                latestVersion: "https://data.mff.cuni.cz/dokumentace/výběrová-řízení/",
+                thisVersion: "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/",
+                latestVersion: "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/",
                 editors: [{
                   name: "Jakub Klímek",
                   orcid: "0000-0001-7234-3051",
@@ -27,7 +27,7 @@
                         href: "https://data.gov.cz"
                     },{
                         value: "Testovací aplikace",
-                        href: "http://skoda.projekty.ms.mff.cuni.cz/www/výběrová-řízení/#/"
+                        href: "http://skoda.projekty.ms.mff.cuni.cz/www/pracovní-místa-mff-uk/#/"
                     },{
                         value: "OFN Pracovní místa ve vědě a výzkumu",
                         href: "https://ofn.gov.cz/pracovní-místa-ve-vědě-a-výzkumu"
@@ -52,7 +52,7 @@
         <section id="přehled">
             <h2>Přehled</h2>
             
-            <figure id="diagram"><img alt="Diagram datového modelu výběrových řízení" src="obrázky/výběrová-řízení.svg">
+            <figure id="diagram"><img alt="Diagram datového modelu výběrových řízení" src="obrázky/pracovní-místa-mff-uk.svg">
                 <figcaption>
                     <a href="">Diagram datového modelu výběrových řízení</a>.
                     Šedě podbarvené části jsou specifikovány jinými otevřenými formálními normami, nebo se jedná o číselník.
@@ -78,45 +78,6 @@
                     Kromě níže specifikovaných vlastností a vazeb je možné u této třídy použít také vlastnosti a vazby třídy <a href="https://ofn.gov.cz/pracovní-místa-ve-vědě-a-výzkumu/draft/#třída-pracovní-místo-ve-vědě-a-výzkumu">Pracovní místo ve vědě a výzkumu</a>, která je specifikována otevřenou formální normou <a href="https://ofn.gov.cz/pracovní-místa-ve-vědě-a-výzkumu/draft/">Pracovní místa vě vědě a výzkumu</a>, a dále také vlastnosti a vazby třídy <a href="../../pracovní-místa/draft/#třída-pracovní-místo">Pracovní místo</a>, která je specifikována otevřenou formální normou <a href="../../pracovní-místa/draft/">Pracovní místo</a>.
                 </p>
 
-                <section id="vazba-výběrové-řízení-akademická-pozice">
-                    <h4>Vazba: Akademická pozice</h4>
-                    
-                    <dl>
-                        <dt>
-                            Vazba
-                        </dt>
-                        <dd>
-                            <code>akademická_pozice</code>
-                        </dd>
-                        <dt>
-                            Typ
-                        </dt>
-                        <dd>
-                            <a href="https://data.mff.cuni.cz/datová-sada?iri=https%3A%2F%2Fdata.mff.cuni.cz%2Fzdroj%2Fdatové-sady%2Fčíselníky%2Fakademické-pozice">Akademická pozice</a>
-                        </dd>
-                        <dt>
-                            Jméno
-                        </dt>
-                        <dd>
-                            Akademická pozice
-                        </dd>
-                        <dt>
-                            Popis
-                        </dt>
-                        <dd>
-                            Akademická pozice.
-                            Hodnoty této vlastnosti jsou z <a href="https://data.mff.cuni.cz/zdroj/číselníky/akademické-pozice">čísleníku akademických pozic</a> publikovaného jako <a href="https://data.mff.cuni.cz/datová-sada?iri=https%3A%2F%2Fdata.mff.cuni.cz%2Fzdroj%2Fdatové-sady%2Fčíselníky%2Fakademické-pozice">číselník v Lokálním katalogu otevřených dat MFF UK</a>.
-                        </dd>
-                        <dt>
-                            Příklad
-                        </dt>
-                        <dd>
-                            <code>https://data.mff.cuni.cz/zdroj/číselníky/akademické-pozice/položky/docent</code>
-                        </dd>
-                    </dl>
-
-                </section>
-                
                 <section id="vazba-výběrové-řízení-expertíza">
                     <h4>Vazba: Expertíza</h4>
                     <dl>
@@ -250,14 +211,14 @@
 
                 <aside class="example" title="Výběrové řízení v JSON-LD">
                     <p>
-                        <a href="příklady/1.jsonld">JSON-LD soubor</a>, <a href="schémata/výběrové-řízení.json">JSON Schema</a>, <a href="schémata/výběrová-řízení.json">JSON Schema pro více výběrových řízení</a>, <a href="kontexty/výběrová-řízení.jsonld">JSON-LD kontext</a>
+                        <a href="příklady/1.jsonld">JSON-LD soubor</a>, <a href="schémata/výběrové-řízení.json">JSON Schema</a>, <a href="schémata/pracovní-místa-mff-uk.json">JSON Schema pro více výběrových řízení</a>, <a href="kontexty/pracovní-místa-mff-uk.jsonld">JSON-LD kontext</a>
                     </p>
 
                     <pre class="json">
 [{
-    "@context": "https://pod-test.mvcr.gov.cz/otevřené-formální-normy/pracovní-místa-ve-vědě-a-výzkumu/draft/kontexty/pracovní-místo-ve-vědě-a-výzkumu.jsonld",
-    "typ": "Pracovní místo ve vědě a výzkumu",
-    "iri": "https://data.mff.cuni.cz/zdroj/výběrová-řízení/202008-AP1-KSI",
+    "@context": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/draft/kontexty/pracovní-místa-mff-uk.jsonld",
+    "typ": "Pracovní místo na MFF UK",
+    "iri": "https://data.mff.cuni.cz/zdroj/pracovní-místa-mff-uk/202008-AP1-KSI",
     "id": "202008-AP1-KSI",
     "nástup_dle_dohody": true,
     "kontakt": [{
@@ -269,7 +230,7 @@
         "email": "mailto:konkurzy@mff.cuni.cz"
     }],
     "sekce": "https://data.mff.cuni.cz/zdroj/číselníky/sekce/položky/informatika",
-    "akademická_pozice": "https://data.mvcr.gov.cz/zdroj/číselníky/akademické-pozice/položky/OA",
+    "akademická_pozice_na_vysoké_škole": "https://data.mvcr.gov.cz/zdroj/číselníky/akademické-pozice-na-vysokých-školách/položky/OA",
     "mzdová_třída": "https://data.mff.cuni.cz/zdroj/číselník/mzdové-třídy/položky/AP1",
     "typ_pracovního_vztahu": [
         "https://data.mvcr.gov.cz/zdroj/číselníky/typy-pracovních-vztahů/položky/zkrácený-úvazek"

@@ -61,9 +61,14 @@
 					"@id": "",
 					"@context": "https://pod-test.mvcr.gov.cz/otevřené-formální-normy/práce/draft/kontexty/práce.jsonld"
 				},
-				"akademická_pozice": {
-					"@id": "",
-					"@type": "@id"
+				"akademická_pozice_na_vysoké_škole": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^https\\://data\\.mvcr\\.gov\\.cz/zdroj/číselníky/akademické-pozice-na-vysokých-školách/položky/.*$",
+					"title": "Akademická pozice na vysoké škole",
+					"examples": [
+					"https://data.mvcr.gov.cz/zdroj/číselníky/akademické-pozice-na-vysokých-školách/položky/docent"
+					]
 				},
 				"obor_isvav": {
 					"@id": "",
