@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"$id": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/schémata/výběrové-řízení.json",
+	"$id": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/schémata/pracovní-místo-mff-uk.json",
 	"name": "Pracovní místo na MFF UK",
 	"description": "Pracovní místo na MFF UK",
 	"required": ["typ"],
