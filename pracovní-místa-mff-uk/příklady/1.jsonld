@@ -1,6 +1,6 @@
 [{
 	"@context": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/draft/kontexty/pracovní-místa-mff-uk.jsonld",
-	"typ": "Pracovní místo na MFF UK",
+	"typ": ["Pracovní místo ve vědě a výzkumu", "Pracovní místo na MFF UK"],
 	"iri": "https://data.mff.cuni.cz/zdroj/pracovní-místa-mff-uk/202008-AP1-KSI",
 	"id": "202008-AP1-KSI",
 	"nástup_dle_dohody": true,
@@ -39,7 +39,13 @@
 		"typ": "Časový okamžik",
 		"datum": "2020-08-14"
 	},
-	"expertíza": [],
+	"expertíza": [{
+		"typ": "Expertíza",
+		"název": {
+			"cs": "Otevřená data",
+			"en": "Open data"
+		}
+	}],
 	"kvalifikace": [{
 		"typ": "Kvalifikace",
 		"název": {

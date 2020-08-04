@@ -91,7 +91,7 @@
                             Typ
                         </dt>
                         <dd>
-                            <a href="https://ofn.gov.cz/věc/2020-07-01/#třída-věc">Věc</a>
+                            <a href="#třída-expertíza">Expertíza</a>
                         </dd>
                         <dt>
                             Jméno
@@ -174,7 +174,7 @@
                             Popis
                         </dt>
                         <dd>
-                            Obor výzkumu v souladu s ISVaV (RIV/CEP).
+                            Sekce MFF UK.
                             Hodnoty této vlastnosti jsou z <a href="https://data.mff.cuni.cz/zdroj/číselníky/sekce">Číselníku sekcí MFF UK</a> publikovaného jako <a href="https://data.mff.cuni.cz/datová-sada?iri=https%3A%2F%2Fdata.mff.cuni.cz%2Fzdroj%2Fdatové-sady%2Fčíselníky%2Fsekce">číselník v Lokálním katalogu otevřených dat MFF UK</a>.
                         </dd>
                         <dt>
@@ -186,6 +186,15 @@
                     </dl>
 
                 </section>
+            
+            </section>
+
+            <section id="třída-expertíza">
+                <h3>Expertíza</h3>
+                <p>
+                    Tato třída reprezentuje expertízu požadovanou pro pracovní místo na MFF UK.
+                    U této třídy je možné použít vlastnosti a vazby třídy Věc, která je specifikována <a href="../../věc/2020-07-01/#třída-věc">otevřenou formální normou Věc</a>.
+                </p>
             
             </section>
 
@@ -217,7 +226,7 @@
                     <pre class="json">
 [{
     "@context": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/draft/kontexty/pracovní-místa-mff-uk.jsonld",
-    "typ": "Pracovní místo na MFF UK",
+    "typ": ["Pracovní místo ve vědě a výzkumu", "Pracovní místo na MFF UK"],
     "iri": "https://data.mff.cuni.cz/zdroj/pracovní-místa-mff-uk/202008-AP1-KSI",
     "id": "202008-AP1-KSI",
     "nástup_dle_dohody": true,
@@ -256,7 +265,13 @@
         "typ": "Časový okamžik",
         "datum": "2020-08-14"
     },
-    "expertíza": [],
+    "expertíza": [{
+        "typ": "Expertíza",
+        "název": {
+            "cs": "Otevřená data",
+            "en": "Open data"
+        }
+    }],
     "kvalifikace": [{
         "typ": "Kvalifikace",
         "název": {

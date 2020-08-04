@@ -1,88 +1,26 @@
 {
-	"@context": {
-		"@version": 1.1,
-		"@import": "https://ofn.gov.cz/věc/2020-07-01/kontexty/věc.jsonld",
-		"@propagate": true,
-		"Pracovní místo": {
-			"@id": "",
-			"@context": {
-				"aktuálně_nabízeno": {
-					"@id": "",
-					"@type": "xsd:boolean"
-				},
-				"id": {
-					"@id": "",
-					"@type": "xsd:string"
-				},
-				"url": {
-					"@id": "",
-					"@type": "@id"
-				},
-				"nástup_dle_dohody": {
-					"@id": "",
-					"@type": "xsd:boolean"
-				},
-				"nástup_ihned": {
-					"@id": "",
-					"@type": "xsd:boolean"
-				},
-				"počet_hodin_týdně": {
-					"@id": "",
-					"@type": "xsd:double"
-				},
-				"doba_trvání": {
-					"@id": ""
-				},
-				"požadované_dokumenty": {
-					"@id": "",
-					"@context": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/kontexty/množství.jsonld"
-				},
-				"kontakt": {
-					"@id": "",
-					"@context": "https://ofn.gov.cz/kontakty/2020-07-01/kontexty/kontakt.jsonld"
-				},
-				"platové_podmínky": {
-					"@id": "",
-					"@context": "https://pod-test.mvcr.gov.cz/otevřené-formální-normy/práce/draft/kontexty/práce.jsonld"
-				},
-				"pracoviště": {
-					"@id": "",
-					"@context": "https://pod-test.mvcr.gov.cz/otevřené-formální-normy/práce/draft/kontexty/práce.jsonld"
-				},
-				"nástup": {
-					"@id": "",
-					"@context": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/kontexty/časový-okamžik.jsonld"
-				},
-				"termín_podání": {
-					"@id": "",
-					"@context": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/kontexty/časový-okamžik.jsonld"
-				},
-				"kvalifikace": {
-					"@id": "",
-					"@context": "https://pod-test.mvcr.gov.cz/otevřené-formální-normy/práce/draft/kontexty/práce.jsonld"
-				},
-				"akademická_pozice_na_vysoké_škole": {
-					"type": "string",
-					"format": "iri",
-					"pattern": "^https\\://data\\.mvcr\\.gov\\.cz/zdroj/číselníky/akademické-pozice-na-vysokých-školách/položky/.*$",
-					"title": "Akademická pozice na vysoké škole",
-					"examples": [
-					"https://data.mvcr.gov.cz/zdroj/číselníky/akademické-pozice-na-vysokých-školách/položky/docent"
-					]
-				},
-				"obor_isvav": {
-					"@id": "",
-					"@type": "@id"
-				},
-				"obor_frascati": {
-					"@id": "",
-					"@type": "@id"
-				},
-				"typ_pracovního_vztahu": {
-					"@id": "",
-					"@type": "@id"
+	"@context": [
+		"https://pod-test.mvcr.gov.cz/otevřené-formální-normy/pracovní-místa-ve-vědě-a-výzkumu/draft/kontexty/pracovní-místo-ve-vědě-a-výzkumu.jsonld",
+		{
+			"@version": 1.1,
+			"@import": "https://ofn.gov.cz/věc/2020-07-01/kontexty/věc.jsonld",
+			"@propagate": true,
+			"Pracovní místo na MFF UK": {
+				"@id": "",
+				"@context": {
+					"sekce": {
+						"@id": "",
+						"@type": "@id"
+					},
+					"mzdová_třída": {
+						"@id": "",
+						"@type": "@id"
+					},
+					"expertíza": {
+						"@id": ""
+					}
 				}
 			}
 		}
-	}
+	]
 }
