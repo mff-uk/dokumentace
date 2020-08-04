@@ -11,7 +11,7 @@
 			"typ": {
 				"type": "array",
 				"contains": {
-					"const": "Pracovní místo ve vědě a výzkumu"
+					"const": "Pracovní místo na MFF UK"
 				}
 			},
 			"expertíza": {
