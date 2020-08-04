@@ -5,20 +5,13 @@
 	"description": "Pracovní místo na MFF UK",
 	"required": ["typ"],
 	"allOf": [{
-		"$ref": "https://ofn.gov.cz/věc/2020-07-01/schémata/věc.json"
-	}, {
 		"$ref": "https://pod-test.mvcr.gov.cz/otevřené-formální-normy/pracovní-místa-ve-vědě-a-výzkumu/draft/schémata/pracovní-místo-ve-vědě-a-výzkumu.json"
 	}, {
 		"properties": {
 			"typ": {
 				"type": "array",
-				"contains": [{
+				"contains": {
 					"const": "Pracovní místo ve vědě a výzkumu"
-				},{
-					"const": "Pracovní místo na MFF UK"
-				}],
-				"items": {
-					"type": "string"
 				}
 			},
 			"expertíza": {
