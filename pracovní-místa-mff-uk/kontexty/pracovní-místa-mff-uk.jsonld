@@ -6,18 +6,18 @@
 			"@import": "https://ofn.gov.cz/věc/2020-07-01/kontexty/věc.jsonld",
 			"@propagate": true,
 			"Pracovní místo na MFF UK": {
-				"@id": "",
+				"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/Pracovní-místo",
 				"@context": {
 					"sekce": {
-						"@id": "",
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/sekce",
 						"@type": "@id"
 					},
 					"mzdová_třída": {
-						"@id": "",
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/mzdová_třída",
 						"@type": "@id"
 					},
 					"expertíza": {
-						"@id": ""
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/expertíza"
 					}
 				}
 			}
