@@ -5,7 +5,7 @@
 	"description": "Pracovní místo na MFF UK",
 	"required": ["typ"],
 	"allOf": [{
-		"$ref": "https://pod-test.mvcr.gov.cz/otevřené-formální-normy/pracovní-místa-ve-vědě-a-výzkumu/draft/schémata/pracovní-místo-ve-vědě-a-výzkumu.json"
+		"$ref": "https://ofn.gov.cz/pracovní-místa/2021-09-23/schémata/pracovní-místo.json"
 	}, {
 		"properties": {
 			"typ": {
