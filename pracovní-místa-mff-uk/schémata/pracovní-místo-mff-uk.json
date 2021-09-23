@@ -41,13 +41,22 @@
 					}]
 				}
 			},
-			"mzdová-třída": {
+			"mzdová_třída": {
 				"type": "string",
 				"format": "iri",
 				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/mzdové-třídy\/položky\/.*$",
 				"title": "Mzdová třída MFF UK",
 				"examples": [
 					"https://data.mff.cuni.cz/zdroj/číselníky/mzdové-třídy/položky/AP3"
+				]
+			},
+			"akademická_pozice": {
+				"type": "string",
+				"format": "iri",
+				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/akademické-pozice\/položky\/.*$",
+				"title": "Mzdová třída MFF UK",
+				"examples": [
+					"https://data.mff.cuni.cz/zdroj/číselníky/akademické-pozice/položky/OA"
 				]
 			},
 			"sekce": {

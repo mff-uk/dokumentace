@@ -16,6 +16,10 @@
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/mzdová-třída",
 						"@type": "@id"
 					},
+					"akademická_pozice": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/akademická-pozice",
+						"@type": "@id"
+					},
 					"expertíza": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/expertíza"
 					}
