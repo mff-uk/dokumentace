@@ -13,7 +13,12 @@
 						"@type": "@id"
 					},
 					"expertíza": {
-						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/expertíza"
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/požadovaná-expertíza",
+						"@context": {
+							"Expertíza": {
+								"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/expertíza"
+							}
+						}
 					},
 					"obor_isvav": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/obor-isvav",
