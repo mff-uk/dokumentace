@@ -8,20 +8,28 @@
 			"Pracovní místo na MFF UK": {
 				"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/pracovní-místo",
 				"@context": {
-					"sekce": {
-						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/sekce",
-						"@type": "@id"
-					},
-					"mzdová_třída": {
-						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/mzdová-třída",
-						"@type": "@id"
-					},
 					"akademická_pozice": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/akademická-pozice",
 						"@type": "@id"
 					},
 					"expertíza": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/expertíza"
+					},
+					"obor_isvav": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/obor-isvav",
+						"@type": "@id"
+					},
+					"obor_frascati": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/obor-frascati",
+						"@type": "@id"
+					},
+					"mzdová_třída": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/mzdová-třída",
+						"@type": "@id"
+					},
+					"sekce": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/sekce",
+						"@type": "@id"
 					}
 				}
 			}
