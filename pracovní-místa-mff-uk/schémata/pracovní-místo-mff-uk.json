@@ -3,7 +3,7 @@
 	"$id": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/schémata/pracovní-místo-mff-uk.json",
 	"name": "Pracovní místo na MFF UK",
 	"description": "Pracovní místo na MFF UK",
-	"required": ["typ"],
+	"required": ["typ", "iri"],
 	"allOf": [{
 		"$ref": "https://ofn.gov.cz/pracovní-místa/2021-09-23/schémata/pracovní-místo.json"
 	}, {
