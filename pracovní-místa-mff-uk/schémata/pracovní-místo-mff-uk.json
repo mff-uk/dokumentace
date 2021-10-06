@@ -71,6 +71,15 @@
 					"https://data.mff.cuni.cz/zdroj/číselníky/sekce/položky/informatika"
 				]
 			},
+			"fakulta": {
+				"type": "string",
+				"format": "iri",
+				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/fakulty\/položky\/.*$",
+				"title": "Fakulty UK",
+				"examples": [
+					"https://data.mff.cuni.cz/zdroj/číselníky/fakulty/položky/MFF"
+				]
+			},
 			"počet_hodin_týdně": {
 				"type": "number",
 				"title": "Počet hodin týdně",
