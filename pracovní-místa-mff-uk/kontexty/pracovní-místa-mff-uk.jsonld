@@ -8,7 +8,7 @@
 			"Pracovní místo na MFF UK": {
 				"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/pracovní-místo",
 				"@context": {
-					"akademická_pozice": {
+					"klasifikace_zaměstnání": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/akademická-pozice",
 						"@type": "@id"
 					},

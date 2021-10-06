@@ -17,13 +17,13 @@
 					"const": "Pracovní místo na MFF UK"
 				}
 			},
-			"akademická_pozice": {
+			"klasifikace_zaměstnání": {
 				"type": "string",
 				"format": "iri",
-				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/akademické-pozice\/položky\/.*$",
-				"title": "Mzdová třída MFF UK",
+				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/klasifikace-zaměstnání\/položky\/.*$",
+				"title": "Klasifikace zaměstnání",
 				"examples": [
-					"https://data.mff.cuni.cz/zdroj/číselníky/akademické-pozice/položky/OA"
+					"https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/23104"
 				]
 			},
 			"expertíza": {
