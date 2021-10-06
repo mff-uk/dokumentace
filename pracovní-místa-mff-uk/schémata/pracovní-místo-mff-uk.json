@@ -50,30 +50,6 @@
 					}]
 				}
 			},
-			"obor_frascati": {
-				"type": "array",
-				"items": {
-					"type": "string",
-					"format": "iri",
-					"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/ford\/položky\/.*$",
-					"title": "Obor Frascati (FORD)",
-					"examples": [
-						"https://data.mff.cuni.cz/zdroj/číselníky/ford/položky/10200"
-					]	
-				}
-			},
-			"obor_isvav": {
-				"type": "array",
-				"items": {
-					"type": "string",
-					"format": "iri",
-					"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/klasifikace-výzkumných-oborů\/položky\/.*$",
-					"title": "Obor ISVaV",
-					"examples": [
-						"https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-výzkumných-oborů/položky/I"
-					]	
-				}
-			},
 			"mzdová_třída": {
 				"type": "string",
 				"format": "iri",

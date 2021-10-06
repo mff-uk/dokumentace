@@ -25,12 +25,6 @@
 	"popis": {
 		"cs": "V odůvodněných případech, např. pokud uchazeč dokončí magisterské studium v době mezi termínem podání přihlášky do výběrového řízení a termínem nástupu do pracovního poměru, dodá uchazeč doklad o ukončeném magisterském vysokoškolském vzdělání před uzavřením pracovní smlouvy. Předložení dokladu o ukončeném magisterském vysokoškolském vzdělání je podmínkou uzavření pracovní smlouvy."
 	},
-	"obor_isvav": [
-		"https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-výzkumných-oborů/položky/I"
-	],
-	"obor_frascati": [
-		"https://data.mff.cuni.cz/zdroj/číselníky/ford/položky/10200"
-	],
 	"nástup": {
 		"typ": "Časový okamžik",
 		"datum": "2020-10-01"
