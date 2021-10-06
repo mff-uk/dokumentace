@@ -20,14 +20,6 @@
 							}
 						}
 					},
-					"obor_isvav": {
-						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/obor-isvav",
-						"@type": "@id"
-					},
-					"obor_frascati": {
-						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/obor-frascati",
-						"@type": "@id"
-					},
 					"mzdová_třída": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/mzdová-třída",
 						"@type": "@id"
@@ -35,6 +27,10 @@
 					"sekce": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/sekce",
 						"@type": "@id"
+					},
+					"počet_hodin_týdně": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/počet-hodin-týdně",
+						"@type": "xsd:double"
 					}
 				}
 			}

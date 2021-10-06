@@ -67,6 +67,13 @@
 				"examples": [
 					"https://data.mff.cuni.cz/zdroj/číselníky/sekce/položky/informatika"
 				]
+			},
+			"počet_hodin_týdně": {
+				"type": "number",
+				"title": "Počet hodin týdně",
+				"examples": [
+					40, 37.5
+				]
 			}
 		}
 	}]
