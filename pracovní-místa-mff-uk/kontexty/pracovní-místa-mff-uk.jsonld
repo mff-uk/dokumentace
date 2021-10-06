@@ -29,7 +29,7 @@
 						"@type": "@id"
 					},
 					"fakulta_či_součást": {
-						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/fakulta_či_součást",
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/fakulta-či-součást",
 						"@type": "@id"
 					},
 					"počet_hodin_týdně": {
