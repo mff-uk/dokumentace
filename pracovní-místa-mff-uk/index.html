@@ -78,38 +78,76 @@
                     Kromě níže specifikovaných vlastností a vazeb je možné u této třídy použít také vlastnosti a vazby třídy <a href="https://ofn.gov.cz/pracovní-místa/2021-09-23/#třída-pracovní-místo">Pracovní místo</a>, která je specifikována otevřenou formální normou <a href="https://ofn.gov.cz/pracovní-místa/2021-09-23/">Pracovní místa</a>.
                 </p>
 
-                <section id="vazba-pracovní-místo-akademická-pozice">
-                    <h4>Vazba: Akademická pozice</h4>
+                <section id="vlastnost-pracovní-místo-počet-hodin-týdně">
+                    <h4>Počet hodin týdně</h4>
                     <dl>
                         <dt>
                             Vlastnost
                         </dt>
                         <dd>
-                            <code>akademická_pozice</code>
+                            <code>počet_hodin_týdně</code>
                         </dd>
                         <dt>
                             Typ
                         </dt>
                         <dd>
-                            <a href="https://data.mff.cuni.cz/datová-sada?iri=https%3A%2F%2Fdata.mff.cuni.cz%2Fzdroj%2Fdatové-sady%2Fčíselníky%2Fakademické-pozice">Akademická pozice</a>
+                            Desetinné říslo
                         </dd>
                         <dt>
                             Jméno
                         </dt>
                         <dd>
-                            Akademická pozice
+                            Počet hodin týdně
                         </dd>
                         <dt>
                             Popis
                         </dt>
                         <dd>
-                            Akademická pozice
+                            Počet hodin týdně, například v případě zkráceného úvazku
                         </dd>
                         <dt>
                             Příklad
                         </dt>
                         <dd>
-                            <code>https://data.mff.cuni.cz/zdroj/číselníky/akademické-pozice/položky/OA</code>
+                            <code>37.5</code>
+                        </dd>
+                    </dl>
+
+                </section>
+                
+                <section id="vazba-pracovní-místo-klasifikace-zaměstnání">
+                    <h4>Vazba: Klasifikace zaměstnání</h4>
+                    <dl>
+                        <dt>
+                            Vlastnost
+                        </dt>
+                        <dd>
+                            <code>klasifikace_zaměstnání</code>
+                        </dd>
+                        <dt>
+                            Typ
+                        </dt>
+                        <dd>
+                            <a href="https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5">Klasifikace zaměstnání (CZ-ISCO) úrověň 5</a>
+                        </dd>
+                        <dt>
+                            Jméno
+                        </dt>
+                        <dd>
+                            Klasifikace zaměstnání
+                        </dd>
+                        <dt>
+                            Popis
+                        </dt>
+                        <dd>
+                            Klasifikace zaměstnání dle číselníku CZ-ISCO úrovně 5.
+                            Hodnoty této vlastnosti jsou z <a href="https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5">čísleníku klasifikace zaměstnání</a> publikovaného jako <a href="https://data.mff.cuni.cz/datová-sada?iri=https%3A%2F%2Fdata.mff.cuni.cz%2Fzdroj%2Fdatové-sady%2Fčíselníky%2Fklasifikace-zaměstnání-cz-isco-5">číselník v Lokálním katalogu otevřených dat MFF UK</a>.
+                        </dd>
+                        <dt>
+                            Příklad
+                        </dt>
+                        <dd>
+                            <code>https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/23104</code>
                         </dd>
                     </dl>
 
@@ -173,7 +211,7 @@
                         </dt>
                         <dd>
                             Mzdová třída.
-                            Hodnoty této vlastnosti jsou z <a href="https://data.mff.cuni.cz/zdroj/číselníky/mzdové-třídy">čísleníku mzdových míst</a> publikovaného jako <a href="https://data.mff.cuni.cz/datová-sada?iri=https%3A%2F%2Fdata.mff.cuni.cz%2Fzdroj%2Fdatové-sady%2Fčíselníky%2Fmzdové-třídy">číselník v Lokálním katalogu otevřených dat MFF UK</a>.
+                            Hodnoty této vlastnosti jsou z <a href="https://data.mff.cuni.cz/zdroj/číselníky/mzdové-třídy">čísleníku mzdových tříd</a> publikovaného jako <a href="https://data.mff.cuni.cz/datová-sada?iri=https%3A%2F%2Fdata.mff.cuni.cz%2Fzdroj%2Fdatové-sady%2Fčíselníky%2Fmzdové-třídy">číselník v Lokálním katalogu otevřených dat MFF UK</a>.
                         </dd>
                         <dt>
                             Příklad
@@ -183,87 +221,7 @@
                         </dd>
                     </dl>
 
-                </section>
-                           
-                <section id="vazba-pracovní-místo-mff-uk-obor-frascati">
-                    <h4>Vazba: Obor Frascati</h4>
-                    
-                    <dl>
-                        <dt>
-                            Vazba
-                        </dt>
-                        <dd>
-                            <code>obor_frascati</code>
-                        </dd>
-                        <dt>
-                            Typ
-                        </dt>
-                        <dd>
-                            <a href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datové-sady/MV/706529437/253b216c527f5dfcb084a49fe070406d">Obor Frascati (FORD)</a>
-                        </dd>
-                        <dt>
-                            Jméno
-                        </dt>
-                        <dd>
-                            Obor Frascati
-                        </dd>
-                        <dt>
-                            Popis
-                        </dt>
-                        <dd>
-                            Obor (tématu) práce podle Frascati manuálu (FORD).
-                            Hodnoty této vlastnosti jsou <a href="https://data.mff.cuni.cz/zdroj/číselníky/ford">Kódy oborů OECD FORD - Frascati manual</a> publikovaného jako <a href="">číselník v katalogu otevřených dat</a>.
-                            V příkladu je uveden obor <code>Computer hardware and architecture</code>.
-                        </dd>
-                        <dt>
-                            Příklad
-                        </dt>
-                        <dd>
-                            <code>https://data.mff.cuni.cz/zdroj/číselníky/ford/položky/20206</code>
-                        </dd>
-                    </dl>
-
-                </section>
-
-                <section id="vazba-pracovní-místo-mff-uk-obor-isvav">
-                    <h4>Vazba: Obor ISVaV</h4>
-                    
-                    <dl>
-                        <dt>
-                            Vazba
-                        </dt>
-                        <dd>
-                            <code>obor_isvav</code>
-                        </dd>
-                        <dt>
-                            Typ
-                        </dt>
-                        <dd>
-                            <a href="https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2FMV%2F706529437%2Fd1d34037dd729e537c1149d4ac6184e1">Obor ISVaV</a>
-                        </dd>
-                        <dt>
-                            Jméno
-                        </dt>
-                        <dd>
-                            Obor ISVaV
-                        </dd>
-                        <dt>
-                            Popis
-                        </dt>
-                        <dd>
-                            Obor práce v souladu s ISVaV (RIV/CEP).
-                            Hodnoty této vlastnosti jsou z <a href="https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-výzkumných-oborů">Číselníku pro obory ISVaV</a> publikovaného jako <a href="">číselník v katalogu otevřených dat</a>.
-                            V příkladu je uveden obor <code>IN - Informatika</code>.
-                        </dd>
-                        <dt>
-                            Příklad
-                        </dt>
-                        <dd>
-                            <code>https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-výzkumných-oborů/položky/IN</code>
-                        </dd>
-                    </dl>
-
-                </section>
+                </section> 
 
                 <section id="vazba-pracovní-místo-mff-uk-sekce">
                     <h4>Vazba: Sekce</h4>
@@ -303,6 +261,45 @@
                     </dl>
 
                 </section>
+
+                <section id="vazba-pracovní-místo-mff-uk-fakulta-či-součást-uk">
+                    <h4>Vazba: Fakulta či součást UK</h4>
+                    
+                    <dl>
+                        <dt>
+                            Vazba
+                        </dt>
+                        <dd>
+                            <code>fakulta_či_součást</code>
+                        </dd>
+                        <dt>
+                            Typ
+                        </dt>
+                        <dd>
+                            <a href="https://data.mff.cuni.cz/zdroj/číselníky/fakulty-a-součásti-uk">Fakulta či součást UK</a>
+                        </dd>
+                        <dt>
+                            Jméno
+                        </dt>
+                        <dd>
+                            Fakulta či součást UK
+                        </dd>
+                        <dt>
+                            Popis
+                        </dt>
+                        <dd>
+                            Fakulta či součást UK.
+                            Hodnoty této vlastnosti jsou z <a href="https://data.mff.cuni.cz/zdroj/číselníky/fakulty-a-součásti-uk">Číselníku fakult a součástí UK</a> publikovaného jako <a href="https://data.mff.cuni.cz/datová-sada?iri=https%3A%2F%2Fdata.mff.cuni.cz%2Fzdroj%2Fdatové-sady%2Fčíselníky%2Ffakulty-a-součásti-uk">číselník v Lokálním katalogu otevřených dat MFF UK</a>.
+                        </dd>
+                        <dt>
+                            Příklad
+                        </dt>
+                        <dd>
+                            <code>https://data.mff.cuni.cz/zdroj/číselníky/fakulty-a-součásti-uk/položky/MFF</code>
+                        </dd>
+                    </dl>
+
+                </section>
             
             </section>
 
@@ -317,6 +314,16 @@
 
         </section>
         
+        <section id="životní-cyklus">
+            <h2>Životní cyklus inzerátu v souboru inzerátů</h2>
+
+            <p>
+                Všechny inzeráty jsou publikovány v jednom JSON-LD souboru.
+                Inzerát je držen v souboru s inzeráty po dobu 1 roku od uplynutí lhůty pro podávání přihlášek v <code>termín_podání</code>.
+            </p>
+
+        </section>
+
         <section id="příklady">
             <h2>Příklady</h2>
 
@@ -352,8 +359,10 @@
         "email": "mailto:konkurzy@mff.cuni.cz"
     }],
     "sekce": "https://data.mff.cuni.cz/zdroj/číselníky/sekce/položky/informatika",
-    "akademická_pozice": "https://data.mff.cuni.cz/zdroj/číselníky/akademické-pozice/položky/OA",
+    "fakulta_či_součást": "https://data.mff.cuni.cz/zdroj/číselníky/fakulty-a-součásti-uk/položky/MFF",
+    "klasifikace_zaměstnání": "https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/23104",
     "mzdová_třída": "https://data.mff.cuni.cz/zdroj/číselníky/mzdové-třídy/položky/AP1",
+    "počet_hodin_týdně": 37.5,
     "typ_pracovního_vztahu": [
         "https://data.mvcr.gov.cz/zdroj/číselníky/typy-pracovních-vztahů/položky/zkrácený-úvazek"
     ],
@@ -364,12 +373,6 @@
     "popis": {
         "cs": "V odůvodněných případech, např. pokud uchazeč dokončí magisterské studium v době mezi termínem podání přihlášky do výběrového řízení a termínem nástupu do pracovního poměru, dodá uchazeč doklad o ukončeném magisterském vysokoškolském vzdělání před uzavřením pracovní smlouvy. Předložení dokladu o ukončeném magisterském vysokoškolském vzdělání je podmínkou uzavření pracovní smlouvy."
     },
-    "obor_isvav": [
-        "https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-výzkumných-oborů/položky/I"
-    ],
-    "obor_frascati": [
-        "https://data.mff.cuni.cz/zdroj/číselníky/ford/položky/10200"
-    ],
     "nástup": {
         "typ": "Časový okamžik",
         "datum": "2020-10-01"

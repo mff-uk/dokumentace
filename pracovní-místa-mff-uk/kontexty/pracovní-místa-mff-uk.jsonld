@@ -8,7 +8,7 @@
 			"Pracovní místo na MFF UK": {
 				"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/pracovní-místo",
 				"@context": {
-					"akademická_pozice": {
+					"klasifikace_zaměstnání": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/akademická-pozice",
 						"@type": "@id"
 					},
@@ -20,14 +20,6 @@
 							}
 						}
 					},
-					"obor_isvav": {
-						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/obor-isvav",
-						"@type": "@id"
-					},
-					"obor_frascati": {
-						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/obor-frascati",
-						"@type": "@id"
-					},
 					"mzdová_třída": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/mzdová-třída",
 						"@type": "@id"
@@ -35,6 +27,14 @@
 					"sekce": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/sekce",
 						"@type": "@id"
+					},
+					"fakulta_či_součást": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/fakulta-či-součást",
+						"@type": "@id"
+					},
+					"počet_hodin_týdně": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/počet-hodin-týdně",
+						"@type": "xsd:double"
 					}
 				}
 			}
