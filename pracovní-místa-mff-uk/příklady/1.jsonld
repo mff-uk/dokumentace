@@ -1,8 +1,8 @@
 [{
 	"@context": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/kontexty/pracovní-místa-mff-uk.jsonld",
 	"typ": ["Pracovní místo", "Pracovní místo na MFF UK"],
-	"iri": "https://data.mff.cuni.cz/zdroj/pracovní-místa-mff-uk/202008-AP1-KSI",
-	"id": "202008-AP1-KSI",
+	"iri": "https://data.mff.cuni.cz/zdroj/pracovní-místa-mff-uk/202008-AP1-MFF-KSI-12",
+	"id": "202008-AP1-MFF-KSI-12",
 	"nástup_dle_dohody": true,
 	"kontakt": [{
 		"typ": "Kontakt",
