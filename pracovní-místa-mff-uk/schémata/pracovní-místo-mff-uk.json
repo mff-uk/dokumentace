@@ -20,7 +20,7 @@
 			"klasifikace_zaměstnání": {
 				"type": "string",
 				"format": "iri",
-				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/klasifikace-zaměstnání\/položky\/.*$",
+				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/klasifikace-zaměstnání-cz-isco-5\/položky\/.*$",
 				"title": "Klasifikace zaměstnání",
 				"examples": [
 					"https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/23104"
