@@ -24,6 +24,9 @@
 		"typ": "Pracoviště",
 		"iri": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura/oddělení/204"
 	},
+	"způsob_podání_přihlášky": [
+		"https://data.mff.cuni.cz/zdroj/číselníky/způsoby-podání-přihlášky/položky/elektronicky"
+	],
 	"popis": {
 		"cs": "V odůvodněných případech, např. pokud uchazeč dokončí magisterské studium v době mezi termínem podání přihlášky do výběrového řízení a termínem nástupu do pracovního poměru, dodá uchazeč doklad o ukončeném magisterském vysokoškolském vzdělání před uzavřením pracovní smlouvy. Předložení dokladu o ukončeném magisterském vysokoškolském vzdělání je podmínkou uzavření pracovní smlouvy."
 	},
