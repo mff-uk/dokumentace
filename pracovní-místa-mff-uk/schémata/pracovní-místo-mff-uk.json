@@ -71,13 +71,13 @@
 					"https://data.mff.cuni.cz/zdroj/číselníky/sekce/položky/informatika"
 				]
 			},
-			"fakulta_či_součást": {
+			"fakulta": {
 				"type": "string",
 				"format": "iri",
-				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/fakulty-a-součásti-uk\/položky\/.*$",
+				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/fakulty-uk\/položky\/.*$",
 				"title": "Fakulty a součásti UK",
 				"examples": [
-					"https://data.mff.cuni.cz/zdroj/číselníky/fakulty-a-součásti-uk/položky/MFF"
+					"https://data.mff.cuni.cz/zdroj/číselníky/fakulty-uk/položky/MFF"
 				]
 			},
 			"způsob_podání_přihlášky": {
