@@ -17,10 +17,18 @@
 					"const": "Pracovní místo na MFF UK"
 				}
 			},
+			"id": {
+				"type": "string",
+				"title": "Interní ID inzerátu",
+				"pattern": "^[0-9]{6}-[^-]{2,4}-[^-]{2,5}-[^-]{1,4}-[0-9]{1,2}$",
+				"examples": [
+					"202008-AP1-MFF-KSI-12"
+				]
+			},
 			"klasifikace_zaměstnání": {
 				"type": "string",
 				"format": "iri",
-				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/klasifikace-zaměstnání\/položky\/.*$",
+				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/klasifikace-zaměstnání-cz-isco-5\/položky\/.*$",
 				"title": "Klasifikace zaměstnání",
 				"examples": [
 					"https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/23104"
@@ -71,14 +79,26 @@
 					"https://data.mff.cuni.cz/zdroj/číselníky/sekce/položky/informatika"
 				]
 			},
-			"fakulta_či_součást": {
+			"fakulta": {
 				"type": "string",
 				"format": "iri",
-				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/fakulty-a-součásti-uk\/položky\/.*$",
+				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/fakulty-uk\/položky\/.*$",
 				"title": "Fakulty a součásti UK",
 				"examples": [
-					"https://data.mff.cuni.cz/zdroj/číselníky/fakulty-a-součásti-uk/položky/MFF"
+					"https://data.mff.cuni.cz/zdroj/číselníky/fakulty-uk/položky/MFF"
 				]
+			},
+			"způsob_podání_přihlášky": {
+				"type": "array",
+				"items": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/způsoby-podání-přihlášky\/položky\/.*$",
+					"title": "Způsob podání přihlášky",
+					"examples": [
+						"https://data.mff.cuni.cz/zdroj/číselníky/způsoby-podání-přihlášky/položky/elektronicky"
+					]
+				}
 			},
 			"počet_hodin_týdně": {
 				"type": "number",

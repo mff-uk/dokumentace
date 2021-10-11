@@ -27,10 +27,10 @@
                         href: "https://data.gov.cz"
                     },{
                         value: "Testovací aplikace",
-                        href: "http://skoda.projekty.ms.mff.cuni.cz/www/výběrová-řízení/#/"
+                        href: "http://skoda.projekty.ms.mff.cuni.cz/výběrová-řízení/#/"
                     },{
-                        value: "OFN Pracovní místa ve vědě a výzkumu",
-                        href: "https://ofn.gov.cz/pracovní-místa-ve-vědě-a-výzkumu"
+                        value: "OFN Pracovní místa",
+                        href: "https://ofn.gov.cz/pracovní-místa/2021-09-23/"
                     },{
                         value: "Kontaktní e-mail",
                         href: "mailto:jakub.klimek@matfyz.cuni.cz"
@@ -78,6 +78,43 @@
                     Kromě níže specifikovaných vlastností a vazeb je možné u této třídy použít také vlastnosti a vazby třídy <a href="https://ofn.gov.cz/pracovní-místa/2021-09-23/#třída-pracovní-místo">Pracovní místo</a>, která je specifikována otevřenou formální normou <a href="https://ofn.gov.cz/pracovní-místa/2021-09-23/">Pracovní místa</a>.
                 </p>
 
+                <section id="vlastnost-pracovní-místo-interní-id">
+                    <h4>Interní ID</h4>
+                    <dl>
+                        <dt>
+                            Vlastnost
+                        </dt>
+                        <dd>
+                            <code>id</code>
+                        </dd>
+                        <dt>
+                            Typ
+                        </dt>
+                        <dd>
+                            Řetězec dle regulárního výrazu <code>^[0-9]{6}-[^-]{2,4}-[^-]{2,5}-[^-]{1,4}-[0-9]{1,2}$</code>
+                        </dd>
+                        <dt>
+                            Jméno
+                        </dt>
+                        <dd>
+                            Interní ID
+                        </dd>
+                        <dt>
+                            Popis
+                        </dt>
+                        <dd>
+                            Interní identifikátor inzerátu pracovního místa
+                        </dd>
+                        <dt>
+                            Příklad
+                        </dt>
+                        <dd>
+                            <code>202008-AP1-MFF-KSI-12</code>
+                        </dd>
+                    </dl>
+
+                </section>
+
                 <section id="vlastnost-pracovní-místo-počet-hodin-týdně">
                     <h4>Počet hodin týdně</h4>
                     <dl>
@@ -91,7 +128,7 @@
                             Typ
                         </dt>
                         <dd>
-                            Desetinné říslo
+                            Desetinné číslo
                         </dd>
                         <dt>
                             Jméno
@@ -262,40 +299,79 @@
 
                 </section>
 
-                <section id="vazba-pracovní-místo-mff-uk-fakulta-či-součást-uk">
-                    <h4>Vazba: Fakulta či součást UK</h4>
+                <section id="vazba-pracovní-místo-mff-uk-fakulta-uk">
+                    <h4>Vazba: Fakulta UK</h4>
                     
                     <dl>
                         <dt>
                             Vazba
                         </dt>
                         <dd>
-                            <code>fakulta_či_součást</code>
+                            <code>fakulta</code>
                         </dd>
                         <dt>
                             Typ
                         </dt>
                         <dd>
-                            <a href="https://data.mff.cuni.cz/zdroj/číselníky/fakulty-a-součásti-uk">Fakulta či součást UK</a>
+                            <a href="https://data.mff.cuni.cz/zdroj/číselníky/fakulty-uk">Fakulta UK</a>
                         </dd>
                         <dt>
                             Jméno
                         </dt>
                         <dd>
-                            Fakulta či součást UK
+                            Fakulta UK
                         </dd>
                         <dt>
                             Popis
                         </dt>
                         <dd>
-                            Fakulta či součást UK.
-                            Hodnoty této vlastnosti jsou z <a href="https://data.mff.cuni.cz/zdroj/číselníky/fakulty-a-součásti-uk">Číselníku fakult a součástí UK</a> publikovaného jako <a href="https://data.mff.cuni.cz/datová-sada?iri=https%3A%2F%2Fdata.mff.cuni.cz%2Fzdroj%2Fdatové-sady%2Fčíselníky%2Ffakulty-a-součásti-uk">číselník v Lokálním katalogu otevřených dat MFF UK</a>.
+                            Fakulta UK.
+                            Hodnoty této vlastnosti jsou z <a href="https://data.mff.cuni.cz/zdroj/číselníky/fakulty-uk">Číselníku fakult UK</a> publikovaného jako <a href="https://data.mff.cuni.cz/datová-sada?iri=https%3A%2F%2Fdata.mff.cuni.cz%2Fzdroj%2Fdatové-sady%2Fčíselníky%2Ffakulty-uk">číselník v Lokálním katalogu otevřených dat MFF UK</a>.
                         </dd>
                         <dt>
                             Příklad
                         </dt>
                         <dd>
-                            <code>https://data.mff.cuni.cz/zdroj/číselníky/fakulty-a-součásti-uk/položky/MFF</code>
+                            <code>https://data.mff.cuni.cz/zdroj/číselníky/fakulty-uk/položky/MFF</code>
+                        </dd>
+                    </dl>
+
+                </section>
+
+                <section id="vazba-pracovní-místo-mff-uk-způsob-podání-přihlášky">
+                    <h4>Vazba: Způsob podání přihlášky</h4>
+                    
+                    <dl>
+                        <dt>
+                            Vazba
+                        </dt>
+                        <dd>
+                            <code>způsob_podání_přihlášky</code>
+                        </dd>
+                        <dt>
+                            Typ
+                        </dt>
+                        <dd>
+                            <a href="https://data.mff.cuni.cz/zdroj/číselníky/způsoby-podání-přihlášky">Způsob podání přihlášky</a>
+                        </dd>
+                        <dt>
+                            Jméno
+                        </dt>
+                        <dd>
+                            Způsob podání přihlášky
+                        </dd>
+                        <dt>
+                            Popis
+                        </dt>
+                        <dd>
+                            Způsob podání přihlášky.
+                            Hodnoty této vlastnosti jsou z <a href="https://data.mff.cuni.cz/zdroj/číselníky/způsoby-podání-přihlášky">Číselníku způsobů podání přihlášky na pracovní místo MFF UK</a> publikovaného jako <a href="https://data.mff.cuni.cz/datová-sada?iri=https%3A%2F%2Fdata.mff.cuni.cz%2Fzdroj%2Fdatové-sady%2Fčíselníky%2Fzpůsoby-podání-přihlášky">číselník v Lokálním katalogu otevřených dat MFF UK</a>.
+                        </dd>
+                        <dt>
+                            Příklad
+                        </dt>
+                        <dd>
+                            <code>https://data.mff.cuni.cz/zdroj/číselníky/způsoby-podání-přihlášky/položky/elektronicky</code>
                         </dd>
                     </dl>
 
@@ -363,7 +439,7 @@
         "email": "mailto:konkurzy@mff.cuni.cz"
     }],
     "sekce": "https://data.mff.cuni.cz/zdroj/číselníky/sekce/položky/informatika",
-    "fakulta_či_součást": "https://data.mff.cuni.cz/zdroj/číselníky/fakulty-a-součásti-uk/položky/MFF",
+    "fakulta": "https://data.mff.cuni.cz/zdroj/číselníky/fakulty-uk/položky/MFF",
     "klasifikace_zaměstnání": "https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/23104",
     "mzdová_třída": "https://data.mff.cuni.cz/zdroj/číselníky/mzdové-třídy/položky/AP1",
     "typ_pracovního_vztahu": [
@@ -374,6 +450,9 @@
         "typ": "Pracoviště",
         "iri": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura/oddělení/204"
     },
+    "způsob_podání_přihlášky": [
+        "https://data.mff.cuni.cz/zdroj/číselníky/způsoby-podání-přihlášky/položky/elektronicky"
+    ],
     "popis": {
         "cs": "V odůvodněných případech, např. pokud uchazeč dokončí magisterské studium v době mezi termínem podání přihlášky do výběrového řízení a termínem nástupu do pracovního poměru, dodá uchazeč doklad o ukončeném magisterském vysokoškolském vzdělání před uzavřením pracovní smlouvy. Předložení dokladu o ukončeném magisterském vysokoškolském vzdělání je podmínkou uzavření pracovní smlouvy."
     },
