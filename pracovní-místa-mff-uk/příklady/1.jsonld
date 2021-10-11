@@ -3,6 +3,10 @@
 	"typ": ["Pracovní místo", "Pracovní místo na MFF UK"],
 	"iri": "https://data.mff.cuni.cz/zdroj/pracovní-místa-mff-uk/202008-AP1-KSI",
 	"id": "202008-AP1-KSI",
+	"název": {
+		"cs": "Nabídka pracovního místa \"Odborný asistent na KSI MFF UK\"",
+		"en": "Job offering \"Assistant professor at DSI FMP CUNI\""
+	},
 	"nástup_dle_dohody": true,
 	"kontakt": [{
 		"typ": "Kontakt",
