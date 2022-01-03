@@ -24,6 +24,10 @@
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/mzdová-třída",
 						"@type": "@id"
 					},
+					"zveřejněno": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/zveřejněno",
+						"@context": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/kontexty/časový-okamžik.jsonld"
+					},
 					"sekce": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/sekce",
 						"@type": "@id"

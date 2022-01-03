@@ -17,6 +17,9 @@
 					"const": "Pracovní místo na MFF UK"
 				}
 			},
+			"zveřejněno": {
+				"$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/časový-okamžik.json"
+			},
 			"id": {
 				"type": "string",
 				"title": "Interní ID inzerátu",
