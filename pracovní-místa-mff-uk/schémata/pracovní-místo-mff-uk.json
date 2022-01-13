@@ -106,10 +106,10 @@
 			"vypisovatel": {
 				"type": "string",
 				"format": "iri",
-				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/vypisovatelé\/položky\/.*$",
+				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/vypisovatelé-výběrových-řízení\/položky\/.*$",
 				"title": "Vypisovatelé pracovních pozic MFF UK",
 				"examples": [
-					"https://data.mff.cuni.cz/zdroj/číselníky/vypisovatelé/položky/děkan"
+					"https://data.mff.cuni.cz/zdroj/číselníky/vypisovatelé-výběrových-řízení/položky/děkan"
 				]
 			},
 			"počet_hodin_týdně": {
