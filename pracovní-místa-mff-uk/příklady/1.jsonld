@@ -43,6 +43,9 @@
 		"typ": "Časový okamžik",
 		"datum": "2020-10-01"
 	},
+	"pokyny_pro_podávání_přihlášek": {
+		"cs": "Přihlášky posílejte e-mailem na..."
+	},
 	"termín_podání": {
 		"typ": "Časový okamžik",
 		"datum": "2020-08-14"

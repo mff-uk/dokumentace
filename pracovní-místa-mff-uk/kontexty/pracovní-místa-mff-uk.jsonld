@@ -21,6 +21,10 @@
 						}
 					},
 					"mzdová_třída": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/pokyny-pro-podávání-přihlášek",
+						"@container": "@language"
+					},
+					"mzdová_třída": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/mzdová-třída",
 						"@type": "@id"
 					},
