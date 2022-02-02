@@ -20,7 +20,7 @@
 							}
 						}
 					},
-					"mzdová_třída": {
+					"pokyny_pro_podávání_přihlášek": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/pokyny-pro-podávání-přihlášek",
 						"@container": "@language"
 					},
