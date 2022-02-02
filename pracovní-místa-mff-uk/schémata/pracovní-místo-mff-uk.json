@@ -23,6 +23,9 @@
 			"pokyny_pro_podávání_přihlášek": {
 				"$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/text.json"
 			},
+			"úvod_inzerátu": {
+				"$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/text.json"
+			},
 			"id": {
 				"type": "string",
 				"title": "Interní ID inzerátu",
