@@ -26,6 +26,12 @@
 			"úvod_inzerátu": {
 				"$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/text.json"
 			},
+			"povinná_publicita": {
+				"type": "boolean",
+				"examples": [
+					true
+				]
+			},
 			"id": {
 				"type": "string",
 				"title": "Interní ID inzerátu",

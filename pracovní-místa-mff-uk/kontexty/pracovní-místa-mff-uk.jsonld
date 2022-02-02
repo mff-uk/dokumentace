@@ -28,6 +28,10 @@
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/pokyny-pro-podávání-přihlášek",
 						"@container": "@language"
 					},
+					"povinná_publicita": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/povinná-publicita",
+						"@type": "xsd:boolean"
+					},
 					"mzdová_třída": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/mzdová-třída",
 						"@type": "@id"
