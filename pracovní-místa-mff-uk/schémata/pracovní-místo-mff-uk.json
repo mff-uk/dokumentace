@@ -1,133 +1,156 @@
 {
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"$id": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/schémata/pracovní-místo-mff-uk.json",
-	"name": "Pracovní místo na MFF UK",
-	"description": "Pracovní místo na MFF UK",
-	"required": ["@context", "typ", "iri", "zveřejněno", "vypisovatel"],
-	"allOf": [{
-		"$ref": "https://ofn.gov.cz/pracovní-místa/2021-09-23/schémata/pracovní-místo.json"
-	}, {
-		"properties": {
-			"@context": {
-				"const": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/kontexty/pracovní-místa-mff-uk.jsonld"
-			},
-			"typ": {
-				"type": "array",
-				"contains": {
-					"const": "Pracovní místo na MFF UK"
-				}
-			},
-			"zveřejněno": {
-				"$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/časový-okamžik.json"
-			},
-			"pokyny_pro_podávání_přihlášek": {
-				"$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/text.json"
-			},
-			"úvod_inzerátu": {
-				"$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/text.json"
-			},
-			"povinná_publicita": {
-				"$ref": "https://ofn.gov.cz/digitální-objekty/2020-07-01/schémata/digitální-objekty.json"
-			},
-			"id": {
-				"type": "string",
-				"title": "Interní ID inzerátu",
-				"pattern": "^[0-9]{6}-[^-]{2,4}-[^-]{2,5}-[^-]{1,6}-[0-9]{1,4}$",
-				"examples": [
-					"202008-AP1-MFF-KSI-12"
-				]
-			},
-			"klasifikace_zaměstnání": {
-				"type": "string",
-				"format": "iri",
-				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/klasifikace-zaměstnání-cz-isco-5\/položky\/.*$",
-				"title": "Klasifikace zaměstnání",
-				"examples": [
-					"https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/23104"
-				]
-			},
-			"expertíza": {
-				"type": "array",
-				"items": {
-					"type": "object",
-					"title": "Expertíza",
-					"required": ["typ"],
-					"allOf": [{
-						"$ref": "https://ofn.gov.cz/věc/2020-07-01/schémata/věc.json"
-					}, {
-						"properties": {
-							"typ": {
-								"oneOf": [{
-									"const": "Expertíza"
-								}, {
-									"type": "array",
-									"contains": {
-										"const": "Expertíza"
-									},
-									"items": {
-										"type": "string"
-									}
-								}]
-							}
-						}
-					}]
-				}
-			},
-			"mzdová_třída": {
-				"type": "string",
-				"format": "iri",
-				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/mzdové-třídy\/položky\/.*$",
-				"title": "Mzdová třída MFF UK",
-				"examples": [
-					"https://data.mff.cuni.cz/zdroj/číselníky/mzdové-třídy/položky/AP3"
-				]
-			},
-			"sekce": {
-				"type": "string",
-				"format": "iri",
-				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/sekce\/položky\/.*$",
-				"title": "Sekce MFF UK",
-				"examples": [
-					"https://data.mff.cuni.cz/zdroj/číselníky/sekce/položky/informatika"
-				]
-			},
-			"fakulta": {
-				"type": "string",
-				"format": "iri",
-				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/fakulty-uk\/položky\/.*$",
-				"title": "Fakulty a součásti UK",
-				"examples": [
-					"https://data.mff.cuni.cz/zdroj/číselníky/fakulty-uk/položky/MFF"
-				]
-			},
-			"způsob_podání_přihlášky": {
-				"type": "array",
-				"items": {
-					"type": "string",
-					"format": "iri",
-					"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/způsoby-podání-přihlášky\/položky\/.*$",
-					"title": "Způsob podání přihlášky",
-					"examples": [
-						"https://data.mff.cuni.cz/zdroj/číselníky/způsoby-podání-přihlášky/položky/elektronicky"
-					]
-				}
-			},
-			"vypisovatel": {
-				"type": "string",
-				"format": "iri",
-				"pattern": "^https\\://data\\.mff\\.cuni\\.cz\/zdroj\/číselníky\/vypisovatelé-výběrových-řízení\/položky\/.*$",
-				"title": "Vypisovatelé pracovních pozic MFF UK",
-				"examples": [
-					"https://data.mff.cuni.cz/zdroj/číselníky/vypisovatelé-výběrových-řízení/položky/děkan"
-				]
-			},
-			"počet_hodin_týdně": {
-				"type": "number",
-				"title": "Počet hodin týdně",
-				"examples": [
-					40, 37.5
-				]
-			}
-		}
-	}]
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/schémata/pracovní-místo-mff-uk.json",
+    "name": "Pracovní místo na MFF UK",
+    "description": "Pracovní místo na MFF UK",
+    "required": [
+        "@context",
+        "typ",
+        "iri",
+        "zveřejněno",
+        "vypisovatel",
+        "smlouva_na_dobu_neurčitou",
+        "nástup_dle_dohody"
+    ],
+    "allOf": [
+        {
+            "$ref": "https://ofn.gov.cz/pracovní-místa/2021-09-23/schémata/pracovní-místo.json"
+        },
+        {
+            "properties": {
+                "@context": {
+                    "const": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/kontexty/pracovní-místa-mff-uk.jsonld"
+                },
+                "typ": {
+                    "type": "array",
+                    "contains": {
+                        "const": "Pracovní místo na MFF UK"
+                    }
+                },
+                "zveřejněno": {
+                    "$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/časový-okamžik.json"
+                },
+                "pokyny_pro_podávání_přihlášek": {
+                    "$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/text.json"
+                },
+                "úvod_inzerátu": {
+                    "$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/text.json"
+                },
+                "povinná_publicita": {
+                    "$ref": "https://ofn.gov.cz/digitální-objekty/2020-07-01/schémata/digitální-objekty.json"
+                },
+                "id": {
+                    "type": "string",
+                    "title": "Interní ID inzerátu",
+                    "pattern": "^[0-9]{6}-[^-]{2,4}-[^-]{2,5}-[^-]{1,6}-[0-9]{1,4}$",
+                    "examples": [
+                        "202008-AP1-MFF-KSI-12"
+                    ]
+                },
+                "klasifikace_zaměstnání": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/.*$",
+                    "title": "Klasifikace zaměstnání",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/23104"
+                    ]
+                },
+                "expertíza": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "title": "Expertíza",
+                        "required": [
+                            "typ"
+                        ],
+                        "allOf": [
+                            {
+                                "$ref": "https://ofn.gov.cz/věc/2020-07-01/schémata/věc.json"
+                            },
+                            {
+                                "properties": {
+                                    "typ": {
+                                        "oneOf": [
+                                            {
+                                                "const": "Expertíza"
+                                            },
+                                            {
+                                                "type": "array",
+                                                "contains": {
+                                                    "const": "Expertíza"
+                                                },
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "mzdová_třída": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/mzdové-třídy/položky/.*$",
+                    "title": "Mzdová třída MFF UK",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/mzdové-třídy/položky/AP3"
+                    ]
+                },
+                "sekce": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/sekce/položky/.*$",
+                    "title": "Sekce MFF UK",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/sekce/položky/informatika"
+                    ]
+                },
+                "fakulta": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/fakulty-uk/položky/.*$",
+                    "title": "Fakulty a součásti UK",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/fakulty-uk/položky/MFF"
+                    ]
+                },
+                "způsob_podání_přihlášky": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "format": "iri",
+                        "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/způsoby-podání-přihlášky/položky/.*$",
+                        "title": "Způsob podání přihlášky",
+                        "examples": [
+                            "https://data.mff.cuni.cz/zdroj/číselníky/způsoby-podání-přihlášky/položky/elektronicky"
+                        ]
+                    }
+                },
+                "vypisovatel": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/vypisovatelé-výběrových-řízení/položky/.*$",
+                    "title": "Vypisovatelé pracovních pozic MFF UK",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/vypisovatelé-výběrových-řízení/položky/děkan"
+                    ]
+                },
+                "smlouva_na_dobu_neurčitou": {
+                    "type": "boolean",
+                    "title": "Smlouva na dobu neurčitou",
+                    "examples": [
+                        true,
+                        false
+                    ]
+                },
+                "očekávaný_konec_smlouvy": {
+                    "$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/časový-okamžik.json"
+                }
+            }
+        }
+    ]
 }

@@ -60,6 +60,14 @@
 					"počet_hodin_týdně": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/počet-hodin-týdně",
 						"@type": "xsd:double"
+					}, 
+					"očekávaný_konec_smlouvy": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/očekávaný-konec-smlouvy",
+						"@context": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/kontexty/časový-okamžik.jsonld"
+					},
+					"smlouva_na_dobu_neurčitou": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/smlouva-na-dobu-neurčitou",
+						"@type": "xsd:boolean"
 					}
 				}
 			}

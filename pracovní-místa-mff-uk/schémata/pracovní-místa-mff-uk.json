@@ -1,9 +1,9 @@
 {
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"$id": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/schémata/pracovní-místa-mff-uk.json",
-	"type": "array",
-	"title": "Pracovní místa na MFF UK",
-	"items": {
-		"$ref": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/schémata/pracovní-místo-mff-uk.json"
-	}
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/schémata/pracovní-místa-mff-uk.json",
+    "type": "array",
+    "title": "Pracovní místa na MFF UK",
+    "items": {
+        "$ref": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/schémata/pracovní-místo-mff-uk.json"
+    }
 }
