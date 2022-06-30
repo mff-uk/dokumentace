@@ -28,6 +28,10 @@
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/pokyny-pro-podávání-přihlášek",
 						"@container": "@language"
 					},
+					"pokyny_pro_podávání_přihlášek_html": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/pokyny-pro-podávání-přihlášek-v-html",
+						"@container": "@language"
+					},
 					"povinná_publicita": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/povinná-publicita",
 						"@container": "@list",

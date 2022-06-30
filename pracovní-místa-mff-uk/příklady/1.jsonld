@@ -52,6 +52,9 @@
 		"pokyny_pro_podávání_přihlášek": {
 			"cs": "Přihlášky posílejte e-mailem na..."
 		},
+		"pokyny_pro_podávání_přihlášek_html": {
+			"cs": "<p>Přihlášky posílejte e-mailem na &hellip;"
+		},
 		"úvod_inzerátu": {
 			"cs": "V souladu s Řádem výběrového řízení Univerzity Karlovy vypisuje děkan Matematicko-fyzikální fakulty Univerzity Karlovy výběrové řízení na obsazení pracovních míst s termínem podání přihlášek {termín_podání.datum}."
 		},
