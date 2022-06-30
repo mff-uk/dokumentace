@@ -58,6 +58,9 @@
 		"úvod_inzerátu": {
 			"cs": "V souladu s Řádem výběrového řízení Univerzity Karlovy vypisuje děkan Matematicko-fyzikální fakulty Univerzity Karlovy výběrové řízení na obsazení pracovních míst s termínem podání přihlášek {termín_podání.datum}."
 		},
+		"úvod_inzerátu_html": {
+			"cs": "V souladu s Řádem výběrového řízení Univerzity Karlovy vypisuje děkan Matematicko-fyzikální fakulty Univerzity Karlovy výběrové řízení na obsazení pracovních míst s termínem podání přihlášek {termín_podání.datum}."
+		},
 		"povinná_publicita": [
 			{
 				"typ": "Digitální objekt",
