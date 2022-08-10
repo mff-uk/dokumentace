@@ -23,7 +23,7 @@
 			}
 		],
 		"sekce": "https://data.mff.cuni.cz/zdroj/číselníky/sekce/položky/informatika",
-		"fakulta": "https://data.mff.cuni.cz/zdroj/číselníky/fakulty-uk/položky/MFF",
+		"fakulta": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura/fakulty/116",
 		"klasifikace_zaměstnání": "https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/23104",
 		"mzdová_třída": "https://data.mff.cuni.cz/zdroj/číselníky/mzdové-třídy/položky/AP1",
 		"typ_pracovního_vztahu": [
@@ -32,7 +32,7 @@
 		"počet_hodin_týdně": 37.5,
 		"pracoviště": {
 			"typ": "Pracoviště",
-			"iri": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura/oddělení/204"
+			"iri": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura/oddělení/1294"
 		},
 		"vypisovatel": "https://data.mff.cuni.cz/zdroj/číselníky/vypisovatelé-výběrových-řízení/položky/děkan",
 		"způsob_podání_přihlášky": [
