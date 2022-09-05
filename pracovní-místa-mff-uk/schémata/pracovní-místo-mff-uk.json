@@ -109,10 +109,10 @@
                 "sekce": {
                     "type": "string",
                     "format": "iri",
-                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/sekce/položky/.*$",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/organizační-struktura/skupiny/.*$",
                     "title": "Sekce MFF UK",
                     "examples": [
-                        "https://data.mff.cuni.cz/zdroj/číselníky/sekce/položky/informatika"
+                        "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura/skupiny/1171"
                     ]
                 },
                 "fakulta": {
