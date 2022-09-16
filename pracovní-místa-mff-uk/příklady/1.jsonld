@@ -19,7 +19,7 @@
 					"cs": "Oficiální e-mail",
 					"en": "Official e-mail"
 				},
-				"email": "mailto:konkurzy@mff.cuni.cz"
+				"email": "mailto:positions@matfyz.cuni.cz"
 			}
 		],
 		"sekce": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura/skupiny/1171",
@@ -127,7 +127,7 @@
 			{
 				"typ": "Požadovaný dokument",
 				"název": {
-					"cs": "uchazeč zajistí, aby na e-mail konkurzy@mff.cuni.cz byl zaslán jeden doporučující dopis, také identifikovaný příslušným kódem pracovního místa v předmětu zprávy"
+					"cs": "uchazeč zajistí, aby na e-mail positions@matfyz.cuni.cz byl zaslán jeden doporučující dopis, také identifikovaný příslušným kódem pracovního místa v předmětu zprávy"
 				}
 			}
 		]
