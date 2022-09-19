@@ -43,7 +43,26 @@
                     "$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/text.json"
                 },
                 "povinná_publicita": {
-                    "$ref": "https://ofn.gov.cz/digitální-objekty/2020-07-01/schémata/digitální-objekty.json"
+                    "allOf": [
+                        {
+                            "$ref": "https://ofn.gov.cz/digitální-objekty/2020-07-01/schémata/digitální-objekty.json"
+                        },
+                        {
+                            "items": {
+                                "properties": {
+                                    "jazyk": {
+                                        "type": "string",
+                                        "format": "iri",
+                                        "pattern": "^http\\://publications\\.europa\\.eu/resource/authority/language/.*$",
+                                        "title": "Jazyk",
+                                        "examples": [
+                                            "http://publications.europa.eu/resource/authority/language/CES"
+                                        ]                
+                                    }
+                                }
+                            }
+                        }
+                    ]
                 },
                 "id": {
                     "type": "string",
