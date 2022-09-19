@@ -67,6 +67,7 @@
 				"název": {
 					"cs": "Logo UK"
 				},
+				"jazyk": "http://publications.europa.eu/resource/authority/language/CES",
 				"typ_média": "http://www.iana.org/assignments/media-types/image/png",
 				"url": "https://www.mff.cuni.cz/fakulta/symboly/logotyp_fakulty_rgb1.png"
 			},
@@ -75,8 +76,18 @@
 				"název": {
 					"cs": "Logo ESF"
 				},
+				"jazyk": "http://publications.europa.eu/resource/authority/language/CES",
 				"typ_média": "http://www.iana.org/assignments/media-types/image/jpeg",
 				"url": "https://www.esfcr.cz/documents/21802/799076/Logo+OPZ+barevn%C3%A9/d8fa3b25-df28-4abc-adde-b9ecbb4c2430?version=1.1&t=1493801701970"
+			},
+			{
+				"typ": "Digitální objekt",
+				"název": {
+					"en": "ESF logo"
+				},
+				"jazyk": "http://publications.europa.eu/resource/authority/language/ENG",
+				"typ_média": "http://www.iana.org/assignments/media-types/image/jpeg",
+				"url": "https://www.esfcr.cz/documents/21802/799076/Logo+OPZ+barevn%C3%A9+ANGLICKY/15610eb5-74dd-4c74-bc59-4f542fc0543c?version=1.1&t=1493801710870"
 			}
 		],
 		"doba_trvání": {

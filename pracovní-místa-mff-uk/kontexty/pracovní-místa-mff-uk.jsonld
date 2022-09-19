@@ -35,7 +35,15 @@
 					"povinná_publicita": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/povinná-publicita",
 						"@container": "@list",
-						"@context": "https://ofn.gov.cz/digitální-objekty/2020-07-01/kontexty/digitální-objekt.ssp.jsonld"
+						"@context": [
+							"https://ofn.gov.cz/digitální-objekty/2020-07-01/kontexty/digitální-objekt.ssp.jsonld",
+							{
+								"jazyk": {
+									"@id": "http://schema.org/language",
+									"@type": "@id"
+								}
+							}
+						]
 					},
 					"mzdová_třída": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/mzdová-třída",
