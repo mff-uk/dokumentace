@@ -9,7 +9,6 @@
         "iri",
         "zveřejněno",
         "vypisovatel",
-        "smlouva_na_dobu_neurčitou",
         "nástup_dle_dohody"
     ],
     "allOf": [
