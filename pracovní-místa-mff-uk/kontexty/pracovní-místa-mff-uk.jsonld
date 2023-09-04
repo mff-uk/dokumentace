@@ -80,6 +80,24 @@
 					"smlouva_na_dobu_neurčitou": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/smlouva-na-dobu-neurčitou",
 						"@type": "xsd:boolean"
+					},
+					"požadované_jazyky": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/požadovaná-jazyková-dovednost",
+						"@context": {
+							"Požadavek na jazykovou dovednost": {
+								"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/požadavek-na-jazykovou-dovednost",
+								"@context": {
+									"jazyk": {
+										"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/požadovaný-jazyk",
+										"@type": "@id"
+									},
+									"úroveň": {
+										"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/požadovaná-úroveň-jazyka",
+										"@type": "@id"
+									}
+								}
+							}
+						}
 					}
 				}
 			}

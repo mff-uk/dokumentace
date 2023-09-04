@@ -121,6 +121,18 @@
 				}
 			}
 		],
+		"požadované_jazyky": [
+			{
+				"typ": "Požadavek na jazykovou dovednost",
+				"jazyk": "http://publications.europa.eu/resource/authority/language/CES",
+				"úroveň": "http://data.europa.eu/snb/cefr/c_097c5ed1"
+			},
+			{
+				"typ": "Požadavek na jazykovou dovednost",
+				"jazyk": "http://publications.europa.eu/resource/authority/language/ENG",
+				"úroveň": "http://data.europa.eu/snb/cefr/c_2f49f1ce"
+		  }
+		],
 		"požadované_dokumenty": [
 			{
 				"typ": "Požadovaný dokument",

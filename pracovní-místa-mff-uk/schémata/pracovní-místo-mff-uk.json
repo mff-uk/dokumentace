@@ -173,6 +173,63 @@
                 },
                 "očekávaný_konec_smlouvy": {
                     "$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/časový-okamžik.json"
+                },
+                "požadované_jazyky": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "title": "Požadavek na jazykovou dovednost",
+                        "required": [
+                            "typ",
+                            "jazyk",
+                            "úroveň"
+                        ],
+                        "allOf": [
+                            {
+                                "$ref": "https://ofn.gov.cz/věc/2020-07-01/schémata/věc.json"
+                            },
+                            {
+                                "properties": {
+                                    "typ": {
+                                        "oneOf": [
+                                            {
+                                                "const": "Požadavek na jazykovou dovednost"
+                                            },
+                                            {
+                                                "type": "array",
+                                                "contains": {
+                                                    "const": "Požadavek na jazykovou dovednost"
+                                                },
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "jazyk": {
+                                    "type": "string",
+                                    "format": "iri",
+                                    "pattern": "^https\\://publications\\.europa\\.eu/resource/authority/language/.*$",
+                                    "title": "Jazyk",
+                                    "examples": [
+                                        "http://publications.europa.eu/resource/authority/language/CES",
+                                        "http://publications.europa.eu/resource/authority/language/ENG"
+                                    ]
+                                },
+                                "úroveň": {
+                                    "type": "string",
+                                    "format": "iri",
+                                    "pattern": "^https\\://data\\.europa\\.eu/snb/cefr/.*$",
+                                    "title": "CEFR úroveň",
+                                    "examples": [
+                                        "http://data.europa.eu/snb/cefr/c_097c5ed1",
+                                        "http://data.europa.eu/snb/cefr/c_2f49f1ce"
+                                    ]
+                                }
+                            }           
+                        ]
+                    }
                 }
             }
         }

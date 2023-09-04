@@ -666,6 +666,37 @@
 
                 </section>
 
+                <section id="vazba-pracovní-místo-požadované-jazyky">
+                    <h4>Vazba: Požadované jazyky</h4>
+                    <dl>
+                        <dt>
+                            Vazba
+                        </dt>
+                        <dd>
+                            <code>požadované_jazyky</code>
+                        </dd>
+                        <dt>
+                            Typ
+                        </dt>
+                        <dd>
+                            <a href="#třída-požadavek-na-jazykovou-dovednost">Požadavek na jazykovou dovednost</a>
+                        </dd>
+                        <dt>
+                            Jméno
+                        </dt>
+                        <dd>
+                            Požadavek na jazykovou dovednost
+                        </dd>
+                        <dt>
+                            Popis
+                        </dt>
+                        <dd>
+                            Požadavky na jazykové dovednosti pro danou pozici.
+                        </dd>
+                    </dl>
+
+                </section>
+
                 <section id="vazba-pracovní-místo-mff-uk-vypisovatel">
                     <h4>Vazba: Vypisovatel</h4>
                     
@@ -752,6 +783,93 @@
                     Tato třída reprezentuje expertízu požadovanou pro pracovní místo na MFF UK.
                     U této třídy je možné použít vlastnosti a vazby třídy Věc, která je specifikována <a href="https://ofn.gov.cz/věc/2020-07-01/#třída-věc">otevřenou formální normou Věc</a>.
                 </p>
+            
+            </section>
+
+            <section id="třída-požadavek-na-jazykovou-dovednost">
+                <h3>Požadavek na jazykovou dovednost</h3>
+                <p>
+                    Tato třída reprezentuje požadavek na jazykovou dovednost.
+                    Jazyk je specifikován IRI položky z <a href="https://op.europa.eu/cs/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">evropského číselníku jazyků</a>.
+                    Požadovaná úroveň je pak specifikována IRI položky z <a href="https://op.europa.eu/cs/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/foreign-language-skill">evropského číselníku úrovní dovedností v cizím jazyce (CEFR)</a>.
+                    U této třídy je možné použít vlastnosti a vazby třídy Věc, která je specifikována <a href="https://ofn.gov.cz/věc/2020-07-01/#třída-věc">otevřenou formální normou Věc</a>.
+                </p>
+
+                <section id="vazba-požadavek-na-jazykovou-dovednost-jazyk">
+                    <h4>Vazba: Jazyk</h4>
+                    
+                    <dl>
+                        <dt>
+                            Vazba
+                        </dt>
+                        <dd>
+                            <code>jazyk</code>
+                        </dd>
+                        <dt>
+                            Typ
+                        </dt>
+                        <dd>
+                            <a href="http://publications.europa.eu/resource/authority/language">Jazyk</a> z <a href="https://op.europa.eu/cs/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">evropského číselníku jazyků</a>.
+                        </dd>
+                        <dt>
+                            Jméno
+                        </dt>
+                        <dd>
+                            Požadovaný jazyk
+                        </dd>
+                        <dt>
+                            Popis
+                        </dt>
+                        <dd>
+                            IRI <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language">Jazyka</a> z <a href="https://op.europa.eu/cs/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">evropského číselníku jazyků</a>.
+                        </dd>
+                        <dt>
+                            Příklad
+                        </dt>
+                        <dd>
+                            <code>http://publications.europa.eu/resource/authority/language/CES</code>
+                        </dd>
+                    </dl>
+
+                </section>
+
+                <section id="vazba-požadavek-na-jazykovou-dovednost-úroveň">
+                    <h4>Vazba: Požadovaná úroveň</h4>
+                    
+                    <dl>
+                        <dt>
+                            Vazba
+                        </dt>
+                        <dd>
+                            <code>úroveň</code>
+                        </dd>
+                        <dt>
+                            Typ
+                        </dt>
+                        <dd>
+                            <a href="http://publications.europa.eu/resource/authority/snb/cefr/25831c2">Úroveň</a> z <a href="https://op.europa.eu/cs/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/foreign-language-skill">evropského číselníku úrovní dovedností v cizím jazyce (CEFR)</a>.
+                        </dd>
+                        <dt>
+                            Jméno
+                        </dt>
+                        <dd>
+                            Požadovaná úroveň
+                        </dd>
+                        <dt>
+                            Popis
+                        </dt>
+                        <dd>
+                            IRI <a href="http://publications.europa.eu/resource/authority/snb/cefr/25831c2">Úrovně</a> z <a href="https://op.europa.eu/cs/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/foreign-language-skill">evropského číselníku úrovní dovedností v cizím jazyce (CEFR)</a>.
+                        </dd>
+                        <dt>
+                            Příklad
+                        </dt>
+                        <dd>
+                            <code>http://data.europa.eu/snb/cefr/c_097c5ed1</code>
+                        </dd>
+                    </dl>
+
+                </section>
             
             </section>
 
@@ -842,7 +960,7 @@
             "cs": "Přihlášky posílejte e-mailem na..."
         },
         "pokyny_pro_podávání_přihlášek_html": {
-            "cs": "<p>Přihlášky posílejte e-mailem na &hellip;"
+            "cs": "&lt;p&gt;Přihlášky posílejte e-mailem na &hellip;"
         },
         "úvod_inzerátu": {
             "cs": "V souladu s Řádem výběrového řízení Univerzity Karlovy vypisuje děkan Matematicko-fyzikální fakulty Univerzity Karlovy výběrové řízení na obsazení pracovních míst s termínem podání přihlášek {termín_podání.datum}."
@@ -909,6 +1027,18 @@
                     "cs": "Dokončené magisterské vysokoškolské vzdělání v oboru informatika nebo příbuzném oboru nejpozději ke dni nástupu do pracovního poměru."
                 }
             }
+        ],
+        "požadované_jazyky": [
+            {
+                "typ": "Požadavek na jazykovou dovednost",
+                "jazyk": "http://publications.europa.eu/resource/authority/language/CES",
+                "úroveň": "http://data.europa.eu/snb/cefr/c_097c5ed1"
+            },
+            {
+                "typ": "Požadavek na jazykovou dovednost",
+                "jazyk": "http://publications.europa.eu/resource/authority/language/ENG",
+                "úroveň": "http://data.europa.eu/snb/cefr/c_2f49f1ce"
+          }
         ],
         "požadované_dokumenty": [
             {
