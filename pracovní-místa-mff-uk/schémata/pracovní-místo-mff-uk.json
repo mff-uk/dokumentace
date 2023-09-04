@@ -205,27 +205,27 @@
                                                 }
                                             }
                                         ]
+                                    },
+                                    "jazyk": {
+                                        "type": "string",
+                                        "format": "iri",
+                                        "pattern": "^http\\://publications\\.europa\\.eu/resource/authority/language/.*$",
+                                        "title": "Jazyk",
+                                        "examples": [
+                                            "http://publications.europa.eu/resource/authority/language/CES",
+                                            "http://publications.europa.eu/resource/authority/language/ENG"
+                                        ]
+                                    },
+                                    "úroveň": {
+                                        "type": "string",
+                                        "format": "iri",
+                                        "pattern": "^http\\://data\\.europa\\.eu/snb/cefr/.*$",
+                                        "title": "CEFR úroveň",
+                                        "examples": [
+                                            "http://data.europa.eu/snb/cefr/c_097c5ed1",
+                                            "http://data.europa.eu/snb/cefr/c_2f49f1ce"
+                                        ]
                                     }
-                                },
-                                "jazyk": {
-                                    "type": "string",
-                                    "format": "iri",
-                                    "pattern": "^https\\://publications\\.europa\\.eu/resource/authority/language/.*$",
-                                    "title": "Jazyk",
-                                    "examples": [
-                                        "http://publications.europa.eu/resource/authority/language/CES",
-                                        "http://publications.europa.eu/resource/authority/language/ENG"
-                                    ]
-                                },
-                                "úroveň": {
-                                    "type": "string",
-                                    "format": "iri",
-                                    "pattern": "^https\\://data\\.europa\\.eu/snb/cefr/.*$",
-                                    "title": "CEFR úroveň",
-                                    "examples": [
-                                        "http://data.europa.eu/snb/cefr/c_097c5ed1",
-                                        "http://data.europa.eu/snb/cefr/c_2f49f1ce"
-                                    ]
                                 }
                             }           
                         ]
