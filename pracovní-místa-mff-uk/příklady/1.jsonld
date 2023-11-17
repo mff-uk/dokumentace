@@ -133,6 +133,7 @@
 				"úroveň": "http://data.europa.eu/snb/cefr/c_2f49f1ce"
 		  }
 		],
+		"minimální_požadované_vzdělání": "https://data.mff.cuni.cz/zdroj/číselníky/požadované-vzdělání/položky/MGR",
 		"požadované_dokumenty": [
 			{
 				"typ": "Požadovaný dokument",

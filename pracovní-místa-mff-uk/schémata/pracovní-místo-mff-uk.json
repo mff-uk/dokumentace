@@ -174,6 +174,16 @@
                 "očekávaný_konec_smlouvy": {
                     "$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/časový-okamžik.json"
                 },
+                "minimální_požadované_vzdělání": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/požadované-vzdělání/položky/.*$",
+                    "title": "Požadované vzdělání",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/požadované-vzdělání/položky/DOC",
+                        "https://data.mff.cuni.cz/zdroj/číselníky/požadované-vzdělání/položky/MGR"
+                    ]
+                },
                 "požadované_jazyky": {
                     "type": "array",
                     "items": {

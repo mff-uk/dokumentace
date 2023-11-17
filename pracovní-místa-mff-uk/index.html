@@ -8,7 +8,7 @@
         <script class="remove">
             var respecConfig = {
                 specStatus: "REC",
-                publishDate: "2023-09-01",
+                publishDate: "2023-11-17",
                 shortName: "pracovní-místa-mff-uk",
                 showPreviousVersion: false,
                 thisVersion: "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/",
@@ -448,6 +448,44 @@
                         </dt>
                         <dd>
                             Očekávané datum konce smlouvy.
+                        </dd>
+                    </dl>
+
+                </section>
+
+                <section id="vazba-pracovní-místo-minimální-požadované-vzdělání">
+                    <h4>Vazba: Minimální požadované vzdělání</h4>
+                    <dl>
+                        <dt>
+                            Vlastnost
+                        </dt>
+                        <dd>
+                            <code>minimální_požadované_vzdělání</code>
+                        </dd>
+                        <dt>
+                            Typ
+                        </dt>
+                        <dd>
+                            <a href="https://data.mff.cuni.cz/zdroj/číselníky/požadované-vzdělání">Požadované vzdělání</a>
+                        </dd>
+                        <dt>
+                            Jméno
+                        </dt>
+                        <dd>
+                            Minimální požadované vzdělání
+                        </dd>
+                        <dt>
+                            Popis
+                        </dt>
+                        <dd>
+                            Minimální požadované vzdělání dle číselníku požadovaných vzdělání
+                            Hodnoty této vlastnosti jsou z <a href="https://data.mff.cuni.cz/zdroj/číselníky/požadované-vzdělání">čísleníku požadovaných vzdělání</a> publikovaného jako <a href="https://data.gov.cz/datová-sada?iri=">číselník v Národním katalogu otevřených dat</a>.
+                        </dd>
+                        <dt>
+                            Příklad
+                        </dt>
+                        <dd>
+                            <code>https://data.mff.cuni.cz/zdroj/číselníky/požadované-vzdělání/položky/DOC</code>
                         </dd>
                     </dl>
 
@@ -913,164 +951,253 @@
                     </p>
 
                     <pre class="json">
-[
-    {
-        "@context": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/kontexty/pracovní-místa-mff-uk.jsonld",
-        "typ": [
-            "Pracovní místo",
-            "Pracovní místo na MFF UK"
-        ],
-        "iri": "https://data.mff.cuni.cz/zdroj/pracovní-místa-mff-uk/202008-AP1-MFF-KSI-12",
-        "id": "202008-AP1-MFF-KSI-12",
-        "název": {
-            "cs": "Nabídka pracovního místa \"Odborný asistent na KSI MFF UK\"",
-            "en": "Job offering \"Assistant professor at DSI FMP CUNI\""
+[{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/schémata/pracovní-místo-mff-uk.json",
+    "name": "Pracovní místo na MFF UK",
+    "description": "Pracovní místo na MFF UK",
+    "required": [
+        "@context",
+        "typ",
+        "iri",
+        "zveřejněno",
+        "vypisovatel",
+        "nástup_dle_dohody"
+    ],
+    "allOf": [
+        {
+            "$ref": "https://ofn.gov.cz/pracovní-místa/2021-09-23/schémata/pracovní-místo.json"
         },
-        "nástup_dle_dohody": true,
-        "kontakt": [
-            {
-                "typ": "Kontakt",
-                "název": {
-                    "cs": "Oficiální e-mail",
-                    "en": "Official e-mail"
+        {
+            "properties": {
+                "@context": {
+                    "const": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/kontexty/pracovní-místa-mff-uk.jsonld"
                 },
-                "email": "mailto:positions@matfyz.cuni.cz"
-            }
-        ],
-        "sekce": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura/skupiny/1171",
-        "fakulta": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura/fakulty/116",
-        "klasifikace_zaměstnání": "https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/23104",
-        "mzdová_třída": "https://data.mff.cuni.cz/zdroj/číselníky/mzdové-třídy/položky/AP1",
-        "typ_pracovního_vztahu": [
-            "https://data.mvcr.gov.cz/zdroj/číselníky/typy-pracovních-vztahů/položky/zkrácený-úvazek"
-        ],
-        "počet_hodin_týdně": 37.5,
-        "pracoviště": {
-            "typ": "Pracoviště",
-            "iri": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura/oddělení/1294"
-        },
-        "vypisovatel": "https://data.mff.cuni.cz/zdroj/číselníky/vypisovatelé-výběrových-řízení/položky/děkan",
-        "způsob_podání_přihlášky": [
-            "https://data.mff.cuni.cz/zdroj/číselníky/způsoby-podání-přihlášky/položky/elektronicky"
-        ],
-        "popis": {
-            "cs": "V odůvodněných případech, např. pokud uchazeč dokončí magisterské studium v době mezi termínem podání přihlášky do výběrového řízení a termínem nástupu do pracovního poměru, dodá uchazeč doklad o ukončeném magisterském vysokoškolském vzdělání před uzavřením pracovní smlouvy. Předložení dokladu o ukončeném magisterském vysokoškolském vzdělání je podmínkou uzavření pracovní smlouvy."
-        },
-        "zveřejněno": {
-            "typ": "Časový okamžik",
-            "datum": "2020-07-15"
-        },
-        "nástup": {
-            "typ": "Časový okamžik",
-            "datum": "2020-10-01"
-        },
-        "pokyny_pro_podávání_přihlášek": {
-            "cs": "Přihlášky posílejte e-mailem na..."
-        },
-        "pokyny_pro_podávání_přihlášek_html": {
-            "cs": "&lt;p&gt;Přihlášky posílejte e-mailem na &hellip;"
-        },
-        "úvod_inzerátu": {
-            "cs": "V souladu s Řádem výběrového řízení Univerzity Karlovy vypisuje děkan Matematicko-fyzikální fakulty Univerzity Karlovy výběrové řízení na obsazení pracovních míst s termínem podání přihlášek {termín_podání.datum}."
-        },
-        "úvod_inzerátu_html": {
-            "cs": "V souladu s Řádem výběrového řízení Univerzity Karlovy vypisuje děkan Matematicko-fyzikální fakulty Univerzity Karlovy výběrové řízení na obsazení pracovních míst s termínem podání přihlášek {termín_podání.datum}."
-        },
-        "povinná_publicita": [
-            {
-                "typ": "Digitální objekt",
-                "název": {
-                    "cs": "Logo UK"
+                "typ": {
+                    "type": "array",
+                    "contains": {
+                        "const": "Pracovní místo na MFF UK"
+                    }
                 },
-                "jazyk": "http://publications.europa.eu/resource/authority/language/CES",
-                "typ_média": "http://www.iana.org/assignments/media-types/image/png",
-                "url": "https://www.mff.cuni.cz/fakulta/symboly/logotyp_fakulty_rgb1.png"
-            },
-            {
-                "typ": "Digitální objekt",
-                "název": {
-                    "cs": "Logo ESF"
+                "zveřejněno": {
+                    "$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/časový-okamžik.json"
                 },
-                "jazyk": "http://publications.europa.eu/resource/authority/language/CES",
-                "typ_média": "http://www.iana.org/assignments/media-types/image/jpeg",
-                "url": "https://www.esfcr.cz/documents/21802/799076/Logo+OPZ+barevn%C3%A9/d8fa3b25-df28-4abc-adde-b9ecbb4c2430?version=1.1&t=1493801701970"
-            },
-            {
-                "typ": "Digitální objekt",
-                "název": {
-                    "en": "ESF logo"
+                "pokyny_pro_podávání_přihlášek": {
+                    "$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/text.json"
                 },
-                "jazyk": "http://publications.europa.eu/resource/authority/language/ENG",
-                "typ_média": "http://www.iana.org/assignments/media-types/image/jpeg",
-                "url": "https://www.esfcr.cz/documents/21802/799076/Logo+OPZ+barevn%C3%A9+ANGLICKY/15610eb5-74dd-4c74-bc59-4f542fc0543c?version=1.1&t=1493801710870"
-            }
-        ],
-        "doba_trvání": {
-            "typ": "Množství",
-            "hodnota": 4,
-            "jednotka": "ANN"
-        },
-        "termín_podání": {
-            "typ": "Časový okamžik",
-            "datum": "2020-08-14"
-        },
-        "očekávaný_konec_smlouvy": {
-            "typ": "Časový okamžik",
-            "datum": "2024-08-14"
-        },
-        "smlouva_na_dobu_neurčitou": false,
-        "expertíza": [
-            {
-                "typ": "Expertíza",
-                "název": {
-                    "cs": "Otevřená data",
-                    "en": "Open data"
+                "pokyny_pro_podávání_přihlášek_html": {
+                    "$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/text.json"
+                },
+                "úvod_inzerátu": {
+                    "$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/text.json"
+                },
+                "úvod_inzerátu_html": {
+                    "$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/text.json"
+                },
+                "povinná_publicita": {
+                    "allOf": [
+                        {
+                            "$ref": "https://ofn.gov.cz/digitální-objekty/2020-07-01/schémata/digitální-objekty.json"
+                        },
+                        {
+                            "items": {
+                                "properties": {
+                                    "jazyk": {
+                                        "type": "string",
+                                        "format": "iri",
+                                        "pattern": "^http\\://publications\\.europa\\.eu/resource/authority/language/.*$",
+                                        "title": "Jazyk",
+                                        "examples": [
+                                            "http://publications.europa.eu/resource/authority/language/CES"
+                                        ]                
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "id": {
+                    "type": "string",
+                    "title": "Interní ID inzerátu",
+                    "pattern": "^[0-9]{6}-[^-]{2,4}-[^-]{2,5}-[^-]{1,6}-[0-9]{1,4}$",
+                    "examples": [
+                        "202008-AP1-MFF-KSI-12"
+                    ]
+                },
+                "klasifikace_zaměstnání": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/.*$",
+                    "title": "Klasifikace zaměstnání",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/23104"
+                    ]
+                },
+                "expertíza": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "title": "Expertíza",
+                        "required": [
+                            "typ"
+                        ],
+                        "allOf": [
+                            {
+                                "$ref": "https://ofn.gov.cz/věc/2020-07-01/schémata/věc.json"
+                            },
+                            {
+                                "properties": {
+                                    "typ": {
+                                        "oneOf": [
+                                            {
+                                                "const": "Expertíza"
+                                            },
+                                            {
+                                                "type": "array",
+                                                "contains": {
+                                                    "const": "Expertíza"
+                                                },
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "mzdová_třída": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/mzdové-třídy/položky/.*$",
+                    "title": "Mzdová třída MFF UK",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/mzdové-třídy/položky/AP3"
+                    ]
+                },
+                "sekce": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/organizační-struktura/skupiny/.*$",
+                    "title": "Sekce MFF UK",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura/skupiny/1171"
+                    ]
+                },
+                "fakulta": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/organizační-struktura/fakulty/.*$",
+                    "title": "Fakulty UK",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura/fakulty/116"
+                    ]
+                },
+                "způsob_podání_přihlášky": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "format": "iri",
+                        "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/způsoby-podání-přihlášky/položky/.*$",
+                        "title": "Způsob podání přihlášky",
+                        "examples": [
+                            "https://data.mff.cuni.cz/zdroj/číselníky/způsoby-podání-přihlášky/položky/elektronicky"
+                        ]
+                    }
+                },
+                "vypisovatel": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/vypisovatelé-výběrových-řízení/položky/.*$",
+                    "title": "Vypisovatelé pracovních pozic MFF UK",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/vypisovatelé-výběrových-řízení/položky/děkan"
+                    ]
+                },
+                "smlouva_na_dobu_neurčitou": {
+                    "type": "boolean",
+                    "title": "Smlouva na dobu neurčitou",
+                    "examples": [
+                        true,
+                        false
+                    ]
+                },
+                "očekávaný_konec_smlouvy": {
+                    "$ref": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/schémata/časový-okamžik.json"
+                },
+                "minimální_požadované_vzdělání": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/požadované-vzdělání/položky/.*$",
+                    "title": "Požadované vzdělání",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/požadované-vzdělání/položky/DOC",
+                        "https://data.mff.cuni.cz/zdroj/číselníky/požadované-vzdělání/položky/MGR"
+                    ]
+                },
+                "požadované_jazyky": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "title": "Požadavek na jazykovou dovednost",
+                        "required": [
+                            "typ",
+                            "jazyk",
+                            "úroveň"
+                        ],
+                        "allOf": [
+                            {
+                                "$ref": "https://ofn.gov.cz/věc/2020-07-01/schémata/věc.json"
+                            },
+                            {
+                                "properties": {
+                                    "typ": {
+                                        "oneOf": [
+                                            {
+                                                "const": "Požadavek na jazykovou dovednost"
+                                            },
+                                            {
+                                                "type": "array",
+                                                "contains": {
+                                                    "const": "Požadavek na jazykovou dovednost"
+                                                },
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "jazyk": {
+                                        "type": "string",
+                                        "format": "iri",
+                                        "pattern": "^http\\://publications\\.europa\\.eu/resource/authority/language/.*$",
+                                        "title": "Jazyk",
+                                        "examples": [
+                                            "http://publications.europa.eu/resource/authority/language/CES",
+                                            "http://publications.europa.eu/resource/authority/language/ENG"
+                                        ]
+                                    },
+                                    "úroveň": {
+                                        "type": "string",
+                                        "format": "iri",
+                                        "pattern": "^http\\://data\\.europa\\.eu/snb/cefr/.*$",
+                                        "title": "CEFR úroveň",
+                                        "examples": [
+                                            "http://data.europa.eu/snb/cefr/c_097c5ed1",
+                                            "http://data.europa.eu/snb/cefr/c_2f49f1ce"
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
                 }
             }
-        ],
-        "kvalifikace": [
-            {
-                "typ": "Kvalifikace",
-                "název": {
-                    "cs": "Dokončené magisterské vysokoškolské vzdělání v oboru informatika nebo příbuzném oboru nejpozději ke dni nástupu do pracovního poměru."
-                }
-            }
-        ],
-        "požadované_jazyky": [
-            {
-                "typ": "Požadavek na jazykovou dovednost",
-                "jazyk": "http://publications.europa.eu/resource/authority/language/CES",
-                "úroveň": "http://data.europa.eu/snb/cefr/c_097c5ed1"
-            },
-            {
-                "typ": "Požadavek na jazykovou dovednost",
-                "jazyk": "http://publications.europa.eu/resource/authority/language/ENG",
-                "úroveň": "http://data.europa.eu/snb/cefr/c_2f49f1ce"
-          }
-        ],
-        "požadované_dokumenty": [
-            {
-                "typ": "Požadovaný dokument",
-                "název": {
-                    "cs": "strukturovaný životopis",
-                    "en": "a curriculum vitae"
-                }
-            },
-            {
-                "typ": "Požadovaný dokument",
-                "název": {
-                    "cs": "doklad o ukončeném magisterském vysokoškolském vzdělání"
-                }
-            },
-            {
-                "typ": "Požadovaný dokument",
-                "název": {
-                    "cs": "uchazeč zajistí, aby na e-mail positions@matfyz.cuni.cz byl zaslán jeden doporučující dopis, také identifikovaný příslušným kódem pracovního místa v předmětu zprávy"
-                }
-            }
-        ]
-    }
-]</pre>
+        }
+    ]
+}]</pre>
                 </aside>
 
             </section>

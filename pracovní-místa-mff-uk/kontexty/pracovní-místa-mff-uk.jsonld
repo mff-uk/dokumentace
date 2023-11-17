@@ -45,6 +45,10 @@
 							}
 						]
 					},
+					"minimální_požadované_vzdělání": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/minimální-požadované-vzdělání",
+						"@type": "@id"
+					},
 					"mzdová_třída": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/mzdová-třída",
 						"@type": "@id"
