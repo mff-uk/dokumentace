@@ -127,19 +127,19 @@
                 "sekce": {
                     "type": "string",
                     "format": "iri",
-                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/organizační-struktura/skupiny/.*$",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/organizační-struktura-uk/organizace/.*$",
                     "title": "Sekce MFF UK",
                     "examples": [
-                        "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura/skupiny/1171"
+                        "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura-uk/organizace/1171"
                     ]
                 },
                 "fakulta": {
                     "type": "string",
                     "format": "iri",
-                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/organizační-struktura/fakulty/.*$",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/organizační-struktura-uk/organizace/.*$",
                     "title": "Fakulty UK",
                     "examples": [
-                        "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura/fakulty/116"
+                        "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura-uk/organizace/116"
                     ]
                 },
                 "způsob_podání_přihlášky": {
