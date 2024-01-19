@@ -154,6 +154,9 @@
 					"cs": "uchazeč zajistí, aby na e-mail positions@matfyz.cuni.cz byl zaslán jeden doporučující dopis, také identifikovaný příslušným kódem pracovního místa v předmětu zprávy"
 				}
 			}
-		]
+		],
+		"euraxess_obor": "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-vědní-obory/položky/100",
+		"euraxess_profil_výzkumníka": "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-profil-výzkumníka/položky/R3",
+		"euraxess_program_eu": "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-programy-eu/položky/4833"
 	}
 ]

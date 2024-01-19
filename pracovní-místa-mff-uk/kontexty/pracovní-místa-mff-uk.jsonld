@@ -102,6 +102,18 @@
 								}
 							}
 						}
+					},
+					"euraxess_obor": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/euraxess-vědní-obor",
+						"@type": "@id"
+					},
+					"euraxess_profil_výzkumníka": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/euraxess-profil-výzkumníka",
+						"@type": "@id"
+					},
+					"euraxess_program_eu": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/euraxess-program-eu",
+						"@type": "@id"
 					}
 				}
 			}

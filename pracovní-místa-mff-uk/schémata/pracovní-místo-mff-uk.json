@@ -240,6 +240,36 @@
                             }           
                         ]
                     }
+                },
+                "euraxess_obor": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/euraxess-vědní-obory/položky/.*$",
+                    "title": "Euraxess - vědní obor",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-vědní-obory/položky/100",
+                        "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-vědní-obory/položky/104"
+                    ]
+                },
+                "euraxess_profil_výzkumníka": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/euraxess-profil-výzkumníka/položky/.*$",
+                    "title": "Euraxess - profil výzkumníka",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-profil-výzkumníka/položky/R1",
+                        "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-profil-výzkumníka/položky/R3"
+                    ]
+                },
+                "euraxess_program_eu": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https\\://data\\.mff\\.cuni\\.cz/zdroj/číselníky/euraxess-programy-eu/položky/.*$",
+                    "title": "Euraxess - program EU",
+                    "examples": [
+                        "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-programy-eu/položky/4833",
+                        "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-programy-eu/položky/4835"
+                    ]
                 }
             }
         }
