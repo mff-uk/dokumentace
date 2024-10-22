@@ -157,6 +157,11 @@
 		],
 		"euraxess_obor": "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-vědní-obory/položky/100",
 		"euraxess_profil_výzkumníka": "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-profil-výzkumníka/položky/R3",
-		"euraxess_program_eu": "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-programy-eu/položky/4833"
+		"euraxess_program_eu": "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-programy-eu/položky/4833",
+		"místo_výkonu_práce": {
+			"typ": "Adresa",
+			"obec": "https://linked.cuzk.cz/resource/ruian/obec/569810",
+			"adresní_místo": "https://linked.cuzk.cz/resource/ruian/adresni-misto/23875356"
+		}
 	}
 ]

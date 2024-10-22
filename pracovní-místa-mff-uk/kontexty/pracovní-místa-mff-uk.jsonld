@@ -114,6 +114,10 @@
 					"euraxess_program_eu": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/euraxess-program-eu",
 						"@type": "@id"
+					},
+					"místo_výkonu_práce": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/má-místo-výkonu-práce",
+						"@context": "https://ofn.gov.cz/adresy/2020-07-01/kontexty/adresa.jsonld"
 					}
 				}
 			}
