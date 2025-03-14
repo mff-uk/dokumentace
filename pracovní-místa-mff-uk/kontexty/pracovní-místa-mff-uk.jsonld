@@ -49,6 +49,10 @@
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/minimální-požadované-vzdělání",
 						"@type": "@id"
 					},
+					"minimální_počet_dopisů_doporučení": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/minimální-počet-dopisů-doporučení",
+						"@type": "xsd:nonNegativeInteger"
+					},
 					"mzdová_třída": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/mzdová-třída",
 						"@type": "@id"

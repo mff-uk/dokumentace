@@ -184,6 +184,14 @@
                         "https://data.mff.cuni.cz/zdroj/číselníky/požadované-vzdělání/položky/MGR"
                     ]
                 },
+                "minimální_počet_dopisů_doporučení": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "title": "Minimální počet dopisů doporučení",
+                    "examples": [
+                        2
+                    ]
+                },
                 "požadované_jazyky": {
                     "type": "array",
                     "items": {

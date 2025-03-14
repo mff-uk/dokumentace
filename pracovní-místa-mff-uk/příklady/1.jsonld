@@ -134,6 +134,7 @@
 		  }
 		],
 		"minimální_požadované_vzdělání": "https://data.mff.cuni.cz/zdroj/číselníky/požadované-vzdělání/položky/MGR",
+		"minimální_počet_dopisů_doporučení": 4,
 		"požadované_dokumenty": [
 			{
 				"typ": "Požadovaný dokument",
