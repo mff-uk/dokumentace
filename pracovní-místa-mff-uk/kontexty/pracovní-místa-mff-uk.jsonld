@@ -57,6 +57,10 @@
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/mzdová-třída",
 						"@type": "@id"
 					},
+					"platové_podmínky": {
+						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/platové-podmínky",
+						"@context": "https://ofn.gov.cz/práce/2021-09-23/kontexty/práce.jsonld"
+					},
 					"zveřejněno": {
 						"@id": "https://data.mff.cuni.cz/slovník/pracovní-místa/zveřejněno",
 						"@context": "https://ofn.gov.cz/základní-datové-typy/2020-07-01/kontexty/časový-okamžik.jsonld"

@@ -65,6 +65,7 @@
 
                 <h3>Seznam změn</h3>
                 <ul>
+                    <li>2025-07-15: Přidány <a href="#vazba-pracovní-místo-mff-uk-platové-podmínky">platové podmínky</a></li>
                     <li>2025-07-14: Upraven regulární výraz pro <a href="#vlastnost-pracovní-místo-interní-id">interní ID</a></li>
                     <li>2025-03-14: Přidána podpora pro <a href="#vazba-pracovní-místo-minimální-počet-dopisů-doporučení">minimální požadovaný počet dopisů doporučení</a></li>
                     <li>2024-10-22: Přidána podpora pro <a href="#vazba-pracovní-místo-místo-výkonu-práce"></a></li>
@@ -579,6 +580,38 @@
                     </dl>
 
                 </section> 
+
+                <section id="vazba-pracovní-místo-mff-uk-platové-podmínky">
+                    <h4>Platové podmínky</h4>
+                    
+                    <dl>
+                        <dt>
+                            Vazba
+                        </dt>
+                        <dd>
+                            <code>platové_podmínky</code>
+                        </dd>
+                        <dt>
+                            Typ
+                        </dt>
+                        <dd>
+                            <a href="https://ofn.gov.cz/práce/2021-09-23/#třída-platové-podmínky">Platové podmínky</a>
+                        </dd>
+                        <dt>
+                            Jméno
+                        </dt>
+                        <dd>
+                            Platové podmínky
+                        </dd>
+                        <dt>
+                            Popis
+                        </dt>
+                        <dd>
+                            Platové podmínky.
+                        </dd>
+                    </dl>
+
+                </section>
 
                 <section id="vazba-pracovní-místo-mff-uk-sekce">
                     <h4>Sekce</h4>
@@ -1168,6 +1201,25 @@
         "fakulta": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura-uk/organizace/116",
         "klasifikace_zaměstnání": "https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/23104",
         "mzdová_třída": "https://data.mff.cuni.cz/zdroj/číselníky/mzdové-třídy/položky/AP1",
+        "platové_podmínky": {
+            "typ": "Platové podmínky",
+            "název": {
+                "cs": "Nástupní plat",
+                "en": "Starting salary"
+            },
+            "minimum": {
+                "typ": "Jednotková částka",
+                "výše": 33000,
+                "měna": "http://publications.europa.eu/resource/authority/currency/CZK",
+                "jednotka": "MON"
+            },
+            "maximum": {
+                "typ": "Jednotková částka",
+                "výše": 115500,
+                "měna": "http://publications.europa.eu/resource/authority/currency/CZK",
+                "jednotka": "MON"
+            }
+        },
         "typ_pracovního_vztahu": [
             "https://data.mvcr.gov.cz/zdroj/číselníky/typy-pracovních-vztahů/položky/zkrácený-úvazek"
         ],
@@ -1273,7 +1325,7 @@
                 "typ": "Požadavek na jazykovou dovednost",
                 "jazyk": "http://publications.europa.eu/resource/authority/language/ENG",
                 "úroveň": "http://data.europa.eu/snb/cefr/c_2f49f1ce"
-          }
+            }
         ],
         "minimální_požadované_vzdělání": "https://data.mff.cuni.cz/zdroj/číselníky/požadované-vzdělání/položky/MGR",
         "minimální_počet_dopisů_doporučení": 4,

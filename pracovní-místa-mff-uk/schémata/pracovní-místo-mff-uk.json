@@ -124,6 +124,9 @@
                         "https://data.mff.cuni.cz/zdroj/číselníky/mzdové-třídy/položky/AP3"
                     ]
                 },
+                "platové_podmínky": {
+                    "$ref": "https://ofn.gov.cz/práce/2021-09-23/schémata/platové-podmínky.json"
+                },
                 "sekce": {
                     "type": "string",
                     "format": "iri",

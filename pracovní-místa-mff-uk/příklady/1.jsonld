@@ -1,168 +1,187 @@
 [
-	{
-		"@context": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/kontexty/pracovní-místa-mff-uk.jsonld",
-		"typ": [
-			"Pracovní místo",
-			"Pracovní místo na MFF UK"
-		],
-		"iri": "https://data.mff.cuni.cz/zdroj/pracovní-místa-mff-uk/202008-AP1-MFF-KSI-12",
-		"id": "202008-AP1-MFF-KSI-12",
-		"název": {
-			"cs": "Nabídka pracovního místa \"Odborný asistent na KSI MFF UK\"",
-			"en": "Job offering \"Assistant professor at DSI FMP CUNI\""
-		},
-		"nástup_dle_dohody": true,
-		"kontakt": [
-			{
-				"typ": "Kontakt",
-				"název": {
-					"cs": "Oficiální e-mail",
-					"en": "Official e-mail"
-				},
-				"email": "mailto:positions@matfyz.cuni.cz"
-			}
-		],
-		"sekce": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura-uk/organizace/1171",
-		"fakulta": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura-uk/organizace/116",
-		"klasifikace_zaměstnání": "https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/23104",
-		"mzdová_třída": "https://data.mff.cuni.cz/zdroj/číselníky/mzdové-třídy/položky/AP1",
-		"typ_pracovního_vztahu": [
-			"https://data.mvcr.gov.cz/zdroj/číselníky/typy-pracovních-vztahů/položky/zkrácený-úvazek"
-		],
-		"počet_hodin_týdně": 37.5,
-		"pracoviště": {
-			"typ": "Pracoviště",
-			"iri": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura-uk/organizace/1294"
-		},
-		"vypisovatel": "https://data.mff.cuni.cz/zdroj/číselníky/vypisovatelé-výběrových-řízení/položky/děkan",
-		"způsob_podání_přihlášky": [
-			"https://data.mff.cuni.cz/zdroj/číselníky/způsoby-podání-přihlášky/položky/elektronicky"
-		],
-		"popis": {
-			"cs": "V odůvodněných případech, např. pokud uchazeč dokončí magisterské studium v době mezi termínem podání přihlášky do výběrového řízení a termínem nástupu do pracovního poměru, dodá uchazeč doklad o ukončeném magisterském vysokoškolském vzdělání před uzavřením pracovní smlouvy. Předložení dokladu o ukončeném magisterském vysokoškolském vzdělání je podmínkou uzavření pracovní smlouvy."
-		},
-		"zveřejněno": {
-			"typ": "Časový okamžik",
-			"datum": "2020-07-15"
-		},
-		"nástup": {
-			"typ": "Časový okamžik",
-			"datum": "2020-10-01"
-		},
-		"pokyny_pro_podávání_přihlášek": {
-			"cs": "Přihlášky posílejte e-mailem na..."
-		},
-		"pokyny_pro_podávání_přihlášek_html": {
-			"cs": "<p>Přihlášky posílejte e-mailem na &hellip;"
-		},
-		"úvod_inzerátu": {
-			"cs": "V souladu s Řádem výběrového řízení Univerzity Karlovy vypisuje děkan Matematicko-fyzikální fakulty Univerzity Karlovy výběrové řízení na obsazení pracovních míst s termínem podání přihlášek {termín_podání.datum}."
-		},
-		"úvod_inzerátu_html": {
-			"cs": "V souladu s Řádem výběrového řízení Univerzity Karlovy vypisuje děkan Matematicko-fyzikální fakulty Univerzity Karlovy výběrové řízení na obsazení pracovních míst s termínem podání přihlášek {termín_podání.datum}."
-		},
-		"povinná_publicita": [
-			{
-				"typ": "Digitální objekt",
-				"název": {
-					"cs": "Logo UK"
-				},
-				"jazyk": "http://publications.europa.eu/resource/authority/language/CES",
-				"typ_média": "http://www.iana.org/assignments/media-types/image/png",
-				"url": "https://www.mff.cuni.cz/fakulta/symboly/logotyp_fakulty_rgb1.png"
-			},
-			{
-				"typ": "Digitální objekt",
-				"název": {
-					"cs": "Logo ESF"
-				},
-				"jazyk": "http://publications.europa.eu/resource/authority/language/CES",
-				"typ_média": "http://www.iana.org/assignments/media-types/image/jpeg",
-				"url": "https://www.esfcr.cz/documents/21802/799076/Logo+OPZ+barevn%C3%A9/d8fa3b25-df28-4abc-adde-b9ecbb4c2430?version=1.1&t=1493801701970"
-			},
-			{
-				"typ": "Digitální objekt",
-				"název": {
-					"en": "ESF logo"
-				},
-				"jazyk": "http://publications.europa.eu/resource/authority/language/ENG",
-				"typ_média": "http://www.iana.org/assignments/media-types/image/jpeg",
-				"url": "https://www.esfcr.cz/documents/21802/799076/Logo+OPZ+barevn%C3%A9+ANGLICKY/15610eb5-74dd-4c74-bc59-4f542fc0543c?version=1.1&t=1493801710870"
-			}
-		],
-		"doba_trvání": {
-			"typ": "Množství",
-			"hodnota": 4,
-			"jednotka": "ANN"
-		},
-		"termín_podání": {
-			"typ": "Časový okamžik",
-			"datum": "2020-08-14"
-		},
-		"očekávaný_konec_smlouvy": {
-			"typ": "Časový okamžik",
-			"datum": "2024-08-14"
-		},
-		"smlouva_na_dobu_neurčitou": false,
-		"expertíza": [
-			{
-				"typ": "Expertíza",
-				"název": {
-					"cs": "Otevřená data",
-					"en": "Open data"
-				}
-			}
-		],
-		"kvalifikace": [
-			{
-				"typ": "Kvalifikace",
-				"název": {
-					"cs": "Dokončené magisterské vysokoškolské vzdělání v oboru informatika nebo příbuzném oboru nejpozději ke dni nástupu do pracovního poměru."
-				}
-			}
-		],
-		"požadované_jazyky": [
-			{
-				"typ": "Požadavek na jazykovou dovednost",
-				"jazyk": "http://publications.europa.eu/resource/authority/language/CES",
-				"úroveň": "http://data.europa.eu/snb/cefr/c_097c5ed1"
-			},
-			{
-				"typ": "Požadavek na jazykovou dovednost",
-				"jazyk": "http://publications.europa.eu/resource/authority/language/ENG",
-				"úroveň": "http://data.europa.eu/snb/cefr/c_2f49f1ce"
-		  }
-		],
-		"minimální_požadované_vzdělání": "https://data.mff.cuni.cz/zdroj/číselníky/požadované-vzdělání/položky/MGR",
-		"minimální_počet_dopisů_doporučení": 4,
-		"požadované_dokumenty": [
-			{
-				"typ": "Požadovaný dokument",
-				"název": {
-					"cs": "strukturovaný životopis",
-					"en": "a curriculum vitae"
-				}
-			},
-			{
-				"typ": "Požadovaný dokument",
-				"název": {
-					"cs": "doklad o ukončeném magisterském vysokoškolském vzdělání"
-				}
-			},
-			{
-				"typ": "Požadovaný dokument",
-				"název": {
-					"cs": "uchazeč zajistí, aby na e-mail positions@matfyz.cuni.cz byl zaslán jeden doporučující dopis, také identifikovaný příslušným kódem pracovního místa v předmětu zprávy"
-				}
-			}
-		],
-		"euraxess_obor": "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-vědní-obory/položky/100",
-		"euraxess_profil_výzkumníka": "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-profil-výzkumníka/položky/R3",
-		"euraxess_program_eu": "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-programy-eu/položky/4833",
-		"místo_výkonu_práce": {
-			"typ": "Adresa",
-			"obec": "https://linked.cuzk.cz/resource/ruian/obec/569810",
-			"adresní_místo": "https://linked.cuzk.cz/resource/ruian/adresni-misto/23875356"
-		}
-	}
+    {
+        "@context": "https://data.mff.cuni.cz/dokumentace/pracovní-místa-mff-uk/kontexty/pracovní-místa-mff-uk.jsonld",
+        "typ": [
+            "Pracovní místo",
+            "Pracovní místo na MFF UK"
+        ],
+        "iri": "https://data.mff.cuni.cz/zdroj/pracovní-místa-mff-uk/202008-AP1-MFF-KSI-12",
+        "id": "202008-AP1-MFF-KSI-12",
+        "název": {
+            "cs": "Nabídka pracovního místa \"Odborný asistent na KSI MFF UK\"",
+            "en": "Job offering \"Assistant professor at DSI FMP CUNI\""
+        },
+        "nástup_dle_dohody": true,
+        "kontakt": [
+            {
+                "typ": "Kontakt",
+                "název": {
+                    "cs": "Oficiální e-mail",
+                    "en": "Official e-mail"
+                },
+                "email": "mailto:positions@matfyz.cuni.cz"
+            }
+        ],
+        "sekce": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura-uk/organizace/1171",
+        "fakulta": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura-uk/organizace/116",
+        "klasifikace_zaměstnání": "https://data.mff.cuni.cz/zdroj/číselníky/klasifikace-zaměstnání-cz-isco-5/položky/23104",
+        "mzdová_třída": "https://data.mff.cuni.cz/zdroj/číselníky/mzdové-třídy/položky/AP1",
+        "platové_podmínky": {
+            "typ": "Platové podmínky",
+            "název": {
+                "cs": "Nástupní plat",
+                "en": "Starting salary"
+            },
+            "minimum": {
+                "typ": "Jednotková částka",
+                "výše": 33000,
+                "měna": "http://publications.europa.eu/resource/authority/currency/CZK",
+                "jednotka": "MON"
+            },
+            "maximum": {
+                "typ": "Jednotková částka",
+                "výše": 115500,
+                "měna": "http://publications.europa.eu/resource/authority/currency/CZK",
+                "jednotka": "MON"
+            }
+        },
+        "typ_pracovního_vztahu": [
+            "https://data.mvcr.gov.cz/zdroj/číselníky/typy-pracovních-vztahů/položky/zkrácený-úvazek"
+        ],
+        "počet_hodin_týdně": 37.5,
+        "pracoviště": {
+            "typ": "Pracoviště",
+            "iri": "https://data.mff.cuni.cz/zdroj/číselníky/organizační-struktura-uk/organizace/1294"
+        },
+        "vypisovatel": "https://data.mff.cuni.cz/zdroj/číselníky/vypisovatelé-výběrových-řízení/položky/děkan",
+        "způsob_podání_přihlášky": [
+            "https://data.mff.cuni.cz/zdroj/číselníky/způsoby-podání-přihlášky/položky/elektronicky"
+        ],
+        "popis": {
+            "cs": "V odůvodněných případech, např. pokud uchazeč dokončí magisterské studium v době mezi termínem podání přihlášky do výběrového řízení a termínem nástupu do pracovního poměru, dodá uchazeč doklad o ukončeném magisterském vysokoškolském vzdělání před uzavřením pracovní smlouvy. Předložení dokladu o ukončeném magisterském vysokoškolském vzdělání je podmínkou uzavření pracovní smlouvy."
+        },
+        "zveřejněno": {
+            "typ": "Časový okamžik",
+            "datum": "2020-07-15"
+        },
+        "nástup": {
+            "typ": "Časový okamžik",
+            "datum": "2020-10-01"
+        },
+        "pokyny_pro_podávání_přihlášek": {
+            "cs": "Přihlášky posílejte e-mailem na..."
+        },
+        "pokyny_pro_podávání_přihlášek_html": {
+            "cs": "<p>Přihlášky posílejte e-mailem na &hellip;"
+        },
+        "úvod_inzerátu": {
+            "cs": "V souladu s Řádem výběrového řízení Univerzity Karlovy vypisuje děkan Matematicko-fyzikální fakulty Univerzity Karlovy výběrové řízení na obsazení pracovních míst s termínem podání přihlášek {termín_podání.datum}."
+        },
+        "úvod_inzerátu_html": {
+            "cs": "V souladu s Řádem výběrového řízení Univerzity Karlovy vypisuje děkan Matematicko-fyzikální fakulty Univerzity Karlovy výběrové řízení na obsazení pracovních míst s termínem podání přihlášek {termín_podání.datum}."
+        },
+        "povinná_publicita": [
+            {
+                "typ": "Digitální objekt",
+                "název": {
+                    "cs": "Logo UK"
+                },
+                "jazyk": "http://publications.europa.eu/resource/authority/language/CES",
+                "typ_média": "http://www.iana.org/assignments/media-types/image/png",
+                "url": "https://www.mff.cuni.cz/fakulta/symboly/logotyp_fakulty_rgb1.png"
+            },
+            {
+                "typ": "Digitální objekt",
+                "název": {
+                    "cs": "Logo ESF"
+                },
+                "jazyk": "http://publications.europa.eu/resource/authority/language/CES",
+                "typ_média": "http://www.iana.org/assignments/media-types/image/jpeg",
+                "url": "https://www.esfcr.cz/documents/21802/799076/Logo+OPZ+barevn%C3%A9/d8fa3b25-df28-4abc-adde-b9ecbb4c2430?version=1.1&t=1493801701970"
+            },
+            {
+                "typ": "Digitální objekt",
+                "název": {
+                    "en": "ESF logo"
+                },
+                "jazyk": "http://publications.europa.eu/resource/authority/language/ENG",
+                "typ_média": "http://www.iana.org/assignments/media-types/image/jpeg",
+                "url": "https://www.esfcr.cz/documents/21802/799076/Logo+OPZ+barevn%C3%A9+ANGLICKY/15610eb5-74dd-4c74-bc59-4f542fc0543c?version=1.1&t=1493801710870"
+            }
+        ],
+        "doba_trvání": {
+            "typ": "Množství",
+            "hodnota": 4,
+            "jednotka": "ANN"
+        },
+        "termín_podání": {
+            "typ": "Časový okamžik",
+            "datum": "2020-08-14"
+        },
+        "očekávaný_konec_smlouvy": {
+            "typ": "Časový okamžik",
+            "datum": "2024-08-14"
+        },
+        "smlouva_na_dobu_neurčitou": false,
+        "expertíza": [
+            {
+                "typ": "Expertíza",
+                "název": {
+                    "cs": "Otevřená data",
+                    "en": "Open data"
+                }
+            }
+        ],
+        "kvalifikace": [
+            {
+                "typ": "Kvalifikace",
+                "název": {
+                    "cs": "Dokončené magisterské vysokoškolské vzdělání v oboru informatika nebo příbuzném oboru nejpozději ke dni nástupu do pracovního poměru."
+                }
+            }
+        ],
+        "požadované_jazyky": [
+            {
+                "typ": "Požadavek na jazykovou dovednost",
+                "jazyk": "http://publications.europa.eu/resource/authority/language/CES",
+                "úroveň": "http://data.europa.eu/snb/cefr/c_097c5ed1"
+            },
+            {
+                "typ": "Požadavek na jazykovou dovednost",
+                "jazyk": "http://publications.europa.eu/resource/authority/language/ENG",
+                "úroveň": "http://data.europa.eu/snb/cefr/c_2f49f1ce"
+            }
+        ],
+        "minimální_požadované_vzdělání": "https://data.mff.cuni.cz/zdroj/číselníky/požadované-vzdělání/položky/MGR",
+        "minimální_počet_dopisů_doporučení": 4,
+        "požadované_dokumenty": [
+            {
+                "typ": "Požadovaný dokument",
+                "název": {
+                    "cs": "strukturovaný životopis",
+                    "en": "a curriculum vitae"
+                }
+            },
+            {
+                "typ": "Požadovaný dokument",
+                "název": {
+                    "cs": "doklad o ukončeném magisterském vysokoškolském vzdělání"
+                }
+            },
+            {
+                "typ": "Požadovaný dokument",
+                "název": {
+                    "cs": "uchazeč zajistí, aby na e-mail positions@matfyz.cuni.cz byl zaslán jeden doporučující dopis, také identifikovaný příslušným kódem pracovního místa v předmětu zprávy"
+                }
+            }
+        ],
+        "euraxess_obor": "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-vědní-obory/položky/100",
+        "euraxess_profil_výzkumníka": "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-profil-výzkumníka/položky/R3",
+        "euraxess_program_eu": "https://data.mff.cuni.cz/zdroj/číselníky/euraxess-programy-eu/položky/4833",
+        "místo_výkonu_práce": {
+            "typ": "Adresa",
+            "obec": "https://linked.cuzk.cz/resource/ruian/obec/569810",
+            "adresní_místo": "https://linked.cuzk.cz/resource/ruian/adresni-misto/23875356"
+        }
+    }
 ]
