@@ -4,8 +4,7 @@ on:
   push:
   pull_request:
     branches:
-    - master
-    - develop
+    - main
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -13,6 +12,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Data validator
-      uses: opendata-mvcr/data-validator/github@master
+      uses: datagov-cz/data-validator/github@master
       with:
         configuration: file://./.github/workflows/validate-syntax.ttl
